@@ -34,73 +34,73 @@
             <legend>Тип</legend>
             <div class="type-radio">
               <input type="radio" name="type-filter" id="accessory" value="Аксессуар для интерьера">
-              <label class="accessory-label" for="accessory">Аксессуар для интерьера</label>
+              <label class="type-radio__label" for="accessory">Аксессуар для интерьера</label>
             </div>
             <div class="type-radio">
               <input type="radio" name="type-filter" id="toy" value="Детская игрушка">
-              <label class="toy-label" for="toy">Детская игрушка</label>
+              <label class="type-radio__label" for="toy">Детская игрушка</label>
             </div>
           </fieldset>
           <fieldset class="knitting__color">
             <legend>Цвет</legend>
             <div class="type-checkbox">
               <input type="checkbox" name="color-filter" id="white" value="white">
-              <label class="white-label" for="white">Белый</label>
+              <label class="type-checkbox__label" for="white">Белый</label>
             </div>
             <div class="type-checkbox">
               <input type="checkbox" name="color-filter" id="gray" value="gray">
-              <label class="gray-label" for="gray">Серый</label>
+              <label class="type-checkbox__label" for="gray">Серый</label>
             </div>
             <div class="type-checkbox">
               <input type="checkbox" name="color-filter" id="tiffany" value="tiffany">
-              <label class="tiffany-label" for="tiffany">«Тиффани»</label>
+              <label class="type-checkbox__label" for="tiffany">«Тиффани»</label>
             </div>
             <div class="type-checkbox">
               <input type="checkbox" name="color-filter" id="black" value="black">
-              <label class="black-label" for="black">Черный</label>
+              <label class="type-checkbox__label" for="black">Черный</label>
             </div>
             <div class="type-checkbox">
               <input type="checkbox" name="color-filter" id="pink" value="pink">
-              <label class="pink-label" for="pink">Розовый</label>
+              <label class="type-checkbox__label" for="pink">Розовый</label>
             </div>
             <div class="type-checkbox">
               <input type="checkbox" name="color-filter" id="orange" value="orange">
-              <label class="orange-label" for="orange">Оранжевый</label>
+              <label class="type-checkbox__label" for="orange">Оранжевый</label>
             </div>
           </fieldset>
           <fieldset class="knitting__identity">
             <legend>ФИО</legend>
             <div class="field-text">
-              <label class="name-label" for="name-field">Имя:</label>
+              <label class="field-text__label" for="name-field">Имя:</label>
               <input type="text" name="name-field" id="name-field" placeholder="Введите ваше имя*" required>
             </div>
             <div class="field-text">
-              <label class="lastname-label" for="lastname-field">Фамилия:</label>
+              <label class="field-text__label" for="lastname-field">Фамилия:</label>
               <input type="text" name="lastname-field" id="lastname-field" placeholder="Укажите фамилию*" required>
             </div>
             <div class="field-text">
-              <label class="patronymic-label" for="patronymic-field">Отчество:</label>
+              <label class="field-text__label" for="patronymic-field">Отчество:</label>
               <input type="text" name="patronymic-field" id="patronymic-field" placeholder="Отчество, если желаете">
             </div>
           </fieldset>
           <fieldset class="knitting__tel">
             <legend>Тел</legend>
             <div class="field-text field-text--tel">
-              <label class="phone-label" for="phone-field"></label>
+              <label class="field-text__label" for="phone-field">Телефон</label> <!-- скрыть содержание label -->
               <input type="tel" name="phone-field" id="phone-field" pattern="\+7\ [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 ХХХ ХХ ХХ*" required>
             </div>
           </fieldset>
           <fieldset class="knitting__email">
             <legend>E-mail</legend>
             <div class="field-text field-text--email">
-              <label class="email-label" for="email-field"></label>
+              <label class="field-text__label" for="email-field">Электронная почта</label> <!-- скрыть содержание label -->
               <input type="email" name="email-field" id="email-field" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" placeholder="Ваш Email*" required>
             </div>
           </fieldset>
           <fieldset class="knitting__additionall">
             <legend>Доп</legend>
             <div class="field-text">
-              <label class="additionall-label" for="additionall-area"></label>
+              <label class="field-text__label" for="additionall-area">Дополнительная информация</label> <!-- скрыть содержание label -->
               <textarea name="additionall-area" id="additionall-area" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
           </fieldset>
