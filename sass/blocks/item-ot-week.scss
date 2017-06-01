@@ -1,13 +1,34 @@
 .item-ot-week {
-  outline: 2px solid green;
+  outline: $temp-ol;
+  padding: 0 30px;
+  box-sizing: border-box;
 }
 
 .item-ot-week__title {
   margin: 0;
+  @include titleH2;
+  font-size: 25px;
+}
+
+.item-ot-week__subtitle {
+  @include titleLegend;
+  line-height: 20px;
+}
+
+.item-ot-week__info {
+  outline: $temp-ol;
 }
 
 .item-ot-week__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  outline: $temp-ol;
+  @include listStyleNone;
+  line-height: 20px;
+}
+
+.item-ot-week__price {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.item-ot-week__order {
 }

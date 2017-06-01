@@ -1,7 +1,9 @@
 .page-header {
-  outline: 2px solid green;
+  outline: $temp-ol;
   margin: 0 auto;
-  width: 320px;
+  padding: 0 30px;
+  box-sizing: border-box;
+  width: $mobileWidth;
 }
 
 .page-header__title {

@@ -1,0 +1,42 @@
+@mixin listStyleNone() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+//Заголовки
+@mixin titleH2() {
+  color: #000000;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px;
+}
+
+@mixin titleH3 {
+  color: #000000;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+@mixin titleLegend {
+  color: #63d1bb;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+}
+
+@mixin titleLabel {
+  color: #000000;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+@mixin titlePholder {
+  color: #444444;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 18px;
+  font-family: "OpenSans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+//--------------------

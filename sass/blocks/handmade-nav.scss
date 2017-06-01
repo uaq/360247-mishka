@@ -1,10 +1,14 @@
 .handmade-nav {
-  outline: 2px solid green;
+  outline: $temp-ol;
 }
 
 .handmade-nav__item {
   display: block;
-  height: 103px;
+  min-height: 103px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 19px;
 }
 
 .handmade-nav__item--interior {

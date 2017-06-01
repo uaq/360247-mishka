@@ -1,3 +1,7 @@
 .type-checkbox {
-  outline: 2px solid green;
+  outline: $temp-ol;
+}
+
+.type-checkbox__label {
+  @include titleLabel;
 }

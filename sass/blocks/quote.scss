@@ -1,4 +1,15 @@
 .quote {
-  outline: 2px solid green;
+  outline: $temp-ol;
   margin: 0;
+}
+
+.quote p {
+  line-height: 30px;
+}
+
+.quote__author {
+  color: #000000;
+  font-weight: bold;
+  font-size: 17px;
+  font-style: normal;
 }

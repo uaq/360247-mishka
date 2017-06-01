@@ -1,9 +1,14 @@
 .main-nav {
-  outline: 2px solid green;
+  outline: $temp-ol;
 }
 
 .main-nav__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include listStyleNone;
+}
+
+.main-nav__list a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
 }

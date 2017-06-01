@@ -1,3 +1,14 @@
 .field-text {
-  outline: 2px solid green;
+}
+
+.field-text__label {
+  @include titleLabel;
+  &--hidden {
+    font-size: 0;
+  }
+}
+
+.field-text input::-webkit-input-placeholder,
+.field-text textarea::-webkit-input-placeholder {
+  @include titlePholder;
 }

@@ -1,6 +1,19 @@
 .page-footer {
-  outline: 2px solid green;
+  outline: $temp-ol;
   margin: 0 auto;
-  width: 320px;
-  background: #f1f1f1;
+  padding: 0 30px;
+  box-sizing: border-box;
+  width: $mobileWidth;
+  background: $gray;
+}
+
+.page-footer__copyright {
+  color: #000000;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 18px;
+}
+
+.page-footer__copyright a {
+  font-size: 0;
 }

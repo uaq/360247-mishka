@@ -1,3 +1,7 @@
 .type-radio {
-  outline: 2px solid green;
+  outline: $temp-ol;
+}
+
+.type-radio__label {
+  @include titleLabel;
 }

@@ -1,7 +1,11 @@
 .reviews {
-  outline: 2px solid green;
+  outline: $temp-ol;
+  padding: 0 30px;
+  box-sizing: border-box;
 }
 
 .reviews__title {
   margin: 0;
+  @include titleH2;
+  font-size: 25px;
 }

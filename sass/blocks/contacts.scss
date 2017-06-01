@@ -1,13 +1,21 @@
 .contacts {
-  outline: 2px solid green;
+  outline: $temp-ol;
 }
 
 .contacts__title {
   margin: 0;
+  padding: 0 30px;
+  box-sizing: border-box;
+  @include titleH2;
+  font-size: 18px;
 }
 
 .contacts__list {
-  margin: 0;
-  padding: 0;
-  list-style: 0;
+  @include listStyleNone;
+}
+
+.contacts__item {
+  padding: 0 30px;
+  box-sizing: border-box;
+  line-height: 30px;
 }

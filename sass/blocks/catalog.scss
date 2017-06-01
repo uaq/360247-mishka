@@ -1,9 +1,12 @@
 .catalog {
-  outline: 2px solid green;
+  outline: $temp-ol;
 }
 
 .catalog__title {
   margin: 0;
+  padding: 0 30px;
+  box-sizing: border-box;
   min-height: 177px;
-  background: #f1f1f1;
+  background: $gray;
+  @include titleH2;
 }

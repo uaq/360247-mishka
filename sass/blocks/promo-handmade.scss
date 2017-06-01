@@ -1,6 +1,5 @@
 .promo-handmade {
-  outline: 2px solid green;
-//  background: red;
+  outline: $temp-ol;
 }
 
 .promo-handmade__header {
@@ -10,4 +9,5 @@
 
 .promo-handmade__title {
   margin: 0;
+  @include titleH2;
 }
