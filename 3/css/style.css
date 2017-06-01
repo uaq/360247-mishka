@@ -1,0 +1,347 @@
+body {
+  margin: 0;
+  min-width: 320px;
+  color: #444444;
+  font-weight: normal;
+  font-size: 15px;
+  font-family: "OpenSans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  line-height: 24px; }
+
+@font-face {
+  font-weight: normal;
+  font-family: "OpenSans";
+  src: url("../../fonts/opensans.woff2") format("woff2"), url("../../fonts/opensans.woff") format("woff"); }
+
+@font-face {
+  font-weight: bold;
+  font-family: "OpenSans";
+  src: url("../../fonts/opensansbold.woff2") format("woff2"), url("../../fonts/opensansbold.woff") format("woff"); }
+
+.catalog {
+  outline: 1px solid blue; }
+
+.catalog__title {
+  margin: 0;
+  padding: 0 30px;
+  box-sizing: border-box;
+  min-height: 177px;
+  background: #f1f1f1;
+  color: #000000;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px; }
+
+.catalog-item {
+  outline: 1px solid blue;
+  padding: 0 30px;
+  box-sizing: border-box; }
+
+.catalog-item__info {
+  font-size: 13px;
+  line-height: 30px; }
+
+.catalog-item__price {
+  font-weight: bold; }
+
+.contacts {
+  outline: 1px solid blue; }
+
+.contacts__title {
+  margin: 0;
+  padding: 0 30px;
+  box-sizing: border-box;
+  color: #000000;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px;
+  font-size: 18px; }
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.contacts__item {
+  padding: 0 30px;
+  box-sizing: border-box;
+  line-height: 30px; }
+
+.features {
+  outline: 1px solid blue;
+  padding: 0 30px;
+  box-sizing: border-box; }
+
+.features__title {
+  margin: 0;
+  color: #000000;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px;
+  font-size: 25px; }
+
+.features__list {
+  outline: 1px solid blue;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #000000;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px; }
+
+.features__item {
+  min-height: 110px; }
+
+.field-text__label {
+  color: #000000;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px; }
+  .field-text__label--hidden {
+    font-size: 0; }
+
+.field-text input::-webkit-input-placeholder,
+.field-text textarea::-webkit-input-placeholder {
+  color: #444444;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 18px;
+  font-family: "OpenSans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; }
+
+.handmade-nav {
+  outline: 1px solid blue; }
+
+.handmade-nav__item {
+  display: block;
+  min-height: 103px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 19px; }
+
+.handmade-nav__item--interior {
+  background: #63d1bb; }
+
+.handmade-nav__item--toy {
+  background: #56c3b2; }
+
+.item-ot-week {
+  outline: 1px solid blue;
+  padding: 0 30px;
+  box-sizing: border-box; }
+
+.item-ot-week__title {
+  margin: 0;
+  color: #000000;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px;
+  font-size: 25px; }
+
+.item-ot-week__subtitle {
+  color: #63d1bb;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  line-height: 20px; }
+
+.item-ot-week__info {
+  outline: 1px solid blue; }
+
+.item-ot-week__list {
+  outline: 1px solid blue;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 20px; }
+
+.item-ot-week__price {
+  font-weight: bold;
+  font-size: 15px; }
+
+.knitting {
+  outline: 1px solid blue; }
+
+.knitting__title {
+  margin: 0;
+  padding: 0 30px;
+  box-sizing: border-box;
+  min-height: 177px;
+  background: #f1f1f1;
+  color: #000000;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px; }
+
+.knitting__info {
+  font-size: 13px; }
+
+.knitting__order {
+  padding: 0 30px;
+  box-sizing: border-box; }
+
+.knitting__legend {
+  color: #63d1bb;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px; }
+
+.knitting__required {
+  font-size: 14px;
+  line-height: 16px; }
+
+.main-catalog {
+  outline: 1px solid blue;
+  margin: 0 auto;
+  width: 320px; }
+
+.main-form {
+  outline: 1px solid blue;
+  margin: 0 auto;
+  width: 320px; }
+
+.main-index {
+  outline: 1px solid blue;
+  margin: 0 auto;
+  width: 320px; }
+
+.main-nav {
+  outline: 1px solid blue; }
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.main-nav__list a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px; }
+
+.making {
+  outline: 1px solid blue;
+  padding: 0 30px;
+  box-sizing: border-box; }
+
+.making__content {
+  outline: 1px solid blue; }
+
+.making__title {
+  color: #000000;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px; }
+
+.making__info {
+  font-size: 13px; }
+
+.modal-order {
+  outline: 1px solid blue;
+  padding: 0 30px;
+  box-sizing: border-box; }
+
+.modal-order__title {
+  margin: 0;
+  color: #000000;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px;
+  font-size: 25px; }
+
+.modal-order__item {
+  outline: 1px solid blue; }
+
+.modal-order__item legend {
+  line-height: 30px; }
+
+.page-footer {
+  outline: 1px solid blue;
+  margin: 0 auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+  width: 320px;
+  background: #f1f1f1; }
+
+.page-footer__copyright {
+  color: #000000;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 18px; }
+
+.page-footer__copyright a {
+  font-size: 0; }
+
+.page-header {
+  outline: 1px solid blue;
+  margin: 0 auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+  width: 320px; }
+
+.page-header__title {
+  font-size: 0; }
+
+.promo-handmade {
+  outline: 1px solid blue; }
+
+.promo-handmade__header {
+  height: 283px;
+  background: url("../../img/hero-mobile@1x.jpg") no-repeat center -18px; }
+
+.promo-handmade__title {
+  margin: 0;
+  color: #000000;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px; }
+
+.promo-week {
+  outline: 1px solid blue; }
+
+.quote {
+  outline: 1px solid blue;
+  margin: 0; }
+
+.quote p {
+  line-height: 30px; }
+
+.quote__author {
+  color: #000000;
+  font-weight: bold;
+  font-size: 17px;
+  font-style: normal; }
+
+.reviews {
+  outline: 1px solid blue;
+  padding: 0 30px;
+  box-sizing: border-box; }
+
+.reviews__title {
+  margin: 0;
+  color: #000000;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px;
+  font-size: 25px; }
+
+.social {
+  outline: 1px solid blue; }
+
+.type-checkbox {
+  outline: 1px solid blue; }
+
+.type-checkbox__label {
+  color: #000000;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px; }
+
+.type-radio {
+  outline: 1px solid blue; }
+
+.type-radio__label {
+  color: #000000;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px; }
