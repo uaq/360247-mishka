@@ -1,0 +1,17 @@
+.features {
+  outline: 2px solid green;
+}
+
+.features__title {
+  margin: 0;
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+}
+
+.features__item {
+  list-style: none;
+  min-height: 110px;
+}
