@@ -4,12 +4,12 @@
 }
 
 .quote p {
-  line-height: 30px;
+  line-height: $lh-b;
 }
 
 .quote__author {
-  color: #000000;
+  color: $black;
   font-weight: bold;
-  font-size: 17px;
+  font-size: $fs-e;
   font-style: normal;
 }

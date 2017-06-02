@@ -1,13 +1,14 @@
 .modal-order {
   outline: $temp-ol;
   padding: 0 30px;
-  box-sizing: border-box;
 }
 
 .modal-order__title {
   margin: 0;
-  @include titleH2;
-  font-size: 25px;
+  color: $black;
+  font-weight: bold;
+  font-size: $fs-b;
+  line-height: $lh-f;
 }
 
 .modal-order__item {
@@ -15,5 +16,5 @@
 }
 
 .modal-order__item legend {
-  line-height: 30px;
+  line-height: $lh-b;
 }

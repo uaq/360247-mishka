@@ -1,14 +1,22 @@
 .field-text {
+
 }
 
 .field-text__label {
-  @include titleLabel;
+  @include title-label;
+
   &--hidden {
-    font-size: 0;
+    font-size:  $fs-hidden;
   }
+}
+
+.field-text input,
+.field-text textarea {
+  font-size: $fs-e;
+  line-height: $lh-k;
 }
 
 .field-text input::placeholder,
 .field-text textarea::placeholder {
-  @include titlePholder;
+  color: $dark-gray;
 }

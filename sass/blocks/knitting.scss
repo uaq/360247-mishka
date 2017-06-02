@@ -5,26 +5,27 @@
 .knitting__title {
   margin: 0;
   padding: 0 30px;
-  box-sizing: border-box;
   min-height: 177px;
   background: $gray;
-  @include titleH2;
+  @include title-h2;
 }
 
 .knitting__info {
-  font-size: 13px;
+  font-size: $fs-h;
 }
 
 .knitting__order {
   padding: 0 30px;
-  box-sizing: border-box;
 }
 
 .knitting__legend {
-  @include titleLegend;
+  color: $light-green;
+  font-weight: bold;
+  font-size: $fs-e;
+  line-height: $lh-m;
 }
 
 .knitting__required {
-  font-size: 14px;
-  line-height: 16px;
+  font-size: $fs-f;
+  line-height: $lh-h;
 }

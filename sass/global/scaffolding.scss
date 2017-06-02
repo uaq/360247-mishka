@@ -1,8 +1,14 @@
 .page {
   margin: 0;
-  min-width: $mobileWidth;
-  color: #444444;
-  font-size: 15px;
+  min-width: $mobile-width;
+  color: $dark-gray;
+  font-size: $fs-main;
   font-family: "OpenSans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  line-height: 24px;
+  line-height: $lh-main;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }

@@ -1,7 +1,6 @@
 .making {
   outline: $temp-ol;
   padding: 0 30px;
-  box-sizing: border-box;
 }
 
 .making__content {
@@ -9,9 +8,12 @@
 }
 
 .making__title {
-  @include titleH3;
+  color: $black;
+  font-weight: bold;
+  font-size: $fs-e;
+  line-height: $lh-d;
 }
 
 .making__info {
-  font-size: 13px;
+  font-size: $fs-h;
 }

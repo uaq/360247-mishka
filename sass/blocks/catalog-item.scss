@@ -1,12 +1,11 @@
 .catalog-item {
   outline: $temp-ol;
   padding: 0 30px;
-  box-sizing: border-box;
 }
 
 .catalog-item__info {
-  font-size: 13px;
-  line-height: 30px;
+  font-size: $fs-h;
+  line-height: $lh-a;
 }
 
 .catalog-item__price {

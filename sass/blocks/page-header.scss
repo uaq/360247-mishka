@@ -2,10 +2,9 @@
   outline: $temp-ol;
   margin: 0 auto;
   padding: 0 30px;
-  box-sizing: border-box;
-  width: $mobileWidth;
+  width: $mobile-width;
 }
 
 .page-header__title {
-  font-size: 0;
+  font-size:  $fs-hidden;
 }

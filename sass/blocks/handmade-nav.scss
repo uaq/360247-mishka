@@ -5,16 +5,16 @@
 .handmade-nav__item {
   display: block;
   min-height: 103px;
-  color: #ffffff;
+  color: $white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 19px;
+  font-size: $fs-c;
 }
 
 .handmade-nav__item--interior {
-  background: #63d1bb;
+  background: $light-green;
 }
 
 .handmade-nav__item--toy {
-  background: #56c3b2;
+  background: $green;
 }

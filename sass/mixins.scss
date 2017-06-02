@@ -1,37 +1,15 @@
 //Заголовки
-@mixin titleH2() {
-  color: #000000;
+@mixin title-h2() {
+  color: $black;
   font-weight: bold;
-  font-size: 27px;
-  line-height: 30px;
+  font-size: $fs-a;
+  line-height: $lh-j;
 }
 
-@mixin titleH3 {
-  color: #000000;
+@mixin title-label() {
+  color: $black;
   font-weight: bold;
-  font-size: 17px;
-  line-height: 24px;
-}
-
-@mixin titleLegend {
-  color: #63d1bb;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 16px;
-}
-
-@mixin titleLabel {
-  color: #000000;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 18px;
-}
-
-@mixin titlePholder {
-  color: #444444;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 18px;
-  font-family: "OpenSans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: $fs-e;
+  line-height: $lh-k;
 }
 //--------------------
