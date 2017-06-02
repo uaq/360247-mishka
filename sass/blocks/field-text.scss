@@ -8,7 +8,7 @@
   }
 }
 
-.field-text input::-webkit-input-placeholder,
-.field-text textarea::-webkit-input-placeholder {
+.field-text input::placeholder,
+.field-text textarea::placeholder {
   @include titlePholder;
 }

@@ -12,7 +12,9 @@
 
 .features__list {
   outline: $temp-ol;
-  @include listStyleNone;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   color: #000000;
   font-weight: bold;
   font-size: 17px;

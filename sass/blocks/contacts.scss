@@ -11,7 +11,9 @@
 }
 
 .contacts__list {
-  @include listStyleNone;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .contacts__item {

@@ -1,8 +1,3 @@
-@mixin listStyleNone() {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
 //Заголовки
 @mixin titleH2() {
   color: #000000;

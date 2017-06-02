@@ -21,7 +21,9 @@
 
 .item-ot-week__list {
   outline: $temp-ol;
-  @include listStyleNone;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   line-height: 20px;
 }
 

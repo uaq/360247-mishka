@@ -3,7 +3,9 @@
 }
 
 .main-nav__list {
-  @include listStyleNone;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .main-nav__list a {
