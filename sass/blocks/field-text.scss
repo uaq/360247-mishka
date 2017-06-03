@@ -6,14 +6,18 @@
   @include title-label;
 
   &--hidden {
-    font-size:  $fs-hidden;
+    font-size: $fs-hidden;
   }
+}
+
+.field-text textarea {
+  font-family: "OpenSans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 .field-text input,
 .field-text textarea {
   font-size: $fs-e;
-  line-height: $lh-k;
+  line-height: $lh-l;
 }
 
 .field-text input::placeholder,

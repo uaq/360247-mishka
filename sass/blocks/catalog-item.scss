@@ -3,11 +3,24 @@
   padding: 0 30px;
 }
 
+.catalog-item a {
+  text-decoration: none;
+}
+
+.catalog-item__title {
+  margin: 0;
+  color: #000000;
+  font-weight: bold;
+  font-size: $fs-e;
+  line-height: $lh-d;
+}
+
 .catalog-item__info {
   font-size: $fs-h;
   line-height: $lh-a;
 }
 
 .catalog-item__price {
+  color: #000000;
   font-weight: bold;
 }
