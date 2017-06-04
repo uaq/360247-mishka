@@ -7,8 +7,8 @@
   margin: 0;
   color: $secondary-text;
   font-weight: bold;
-  font-size: $font-size--xxxl + px;
-  line-height: 30 / $font-size--xxxl + em;
+  font-size: $font-size--xxxl;
+  line-height: 30px / $font-size--xxxl;
 }
 
 .modal-order__item {
@@ -16,5 +16,5 @@
 }
 
 .modal-order__item legend {
-  line-height: 30 / $font-size--main + em;
+  line-height: 30px / $font-size--main;
 }

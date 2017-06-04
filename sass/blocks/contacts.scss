@@ -7,8 +7,8 @@
   padding: 0 30px;
   color: $secondary-text;
   font-weight: bold;
-  font-size: $font-size--xl + px;
-  line-height: 30 / $font-size--xl + em;
+  font-size: $font-size--xl;
+  line-height: 30px / $font-size--xl;
 }
 
 .contacts__list {
@@ -19,7 +19,7 @@
 
 .contacts__item {
   padding: 0 30px;
-  line-height: 30 / $font-size--main + em;
+  line-height: 30px / $font-size--main;
 }
 
 .contacts__item a {

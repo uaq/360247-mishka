@@ -4,19 +4,19 @@
 }
 
 .quote p {
-  line-height: 30 / $font-size--main + em;
+  line-height: 30px / $font-size--main;
 }
 
 .quote__author {
   color: $secondary-text;
   font-weight: bold;
-  font-size: $font-size--large + px;
-  line-height: 24 / $font-size--large + em;
+  font-size: $font-size--l;
+  line-height: 24px / $font-size--l;
   font-style: normal;
 }
 
 .quote__email {
   text-decoration: none;
-  font-size: $font-size--large + px;
-  line-height: 30 / $font-size--large + em;
+  font-size: $font-size--l;
+  line-height: 30px / $font-size--l;
 }
