@@ -1,0 +1,22 @@
+.quote {
+  outline: $temp-ol;
+  margin: 0;
+}
+
+.quote p {
+  line-height: 30px / $font-size--main;
+}
+
+.quote__author {
+  color: $secondary-text;
+  font-weight: bold;
+  font-size: $font-size--l;
+  line-height: 24px / $font-size--l;
+  font-style: normal;
+}
+
+.quote__email {
+  text-decoration: none;
+  font-size: $font-size--l;
+  line-height: 30px / $font-size--l;
+}

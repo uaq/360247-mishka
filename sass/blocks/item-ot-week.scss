@@ -1,0 +1,39 @@
+.item-ot-week {
+  outline: $temp-ol;
+  padding: 0 30px;
+}
+
+.item-ot-week__title {
+  margin: 0;
+  color: $secondary-text;
+  font-weight: bold;
+  font-size: $font-size--xxxl;
+  line-height: 30px / $font-size--xxxl;
+}
+
+.item-ot-week__subtitle {
+  color: $legend-text;
+  font-weight: bold;
+  font-size: $font-size--l;
+  line-height: 20px / $font-size--l;
+}
+
+.item-ot-week__info {
+  outline: $temp-ol;
+}
+
+.item-ot-week__list {
+  outline: $temp-ol;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 20px / $font-size--main;
+}
+
+.item-ot-week__price {
+  font-weight: bold;
+  font-size: $font-size--l;
+}
+
+.item-ot-week__order {
+}

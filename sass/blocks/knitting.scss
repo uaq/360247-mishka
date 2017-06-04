@@ -1,0 +1,31 @@
+.knitting {
+  outline: $temp-ol;
+}
+
+.knitting__title {
+  margin: 0;
+  padding: 0 30px;
+  min-height: 177px;
+  background: $gray;
+  @include title-h2;
+}
+
+.knitting__info {
+  font-size: $font-size--xs;
+}
+
+.knitting__order {
+  padding: 0 30px;
+}
+
+.knitting__legend {
+  color: $legend-text;
+  font-weight: bold;
+  font-size: $font-size--l;
+  line-height: 18px / $font-size--l;
+}
+
+.knitting__required {
+  font-size: $font-size--s;
+  line-height: 16px / $font-size--s;
+}

@@ -1,0 +1,14 @@
+.page {
+  margin: 0;
+  min-width: $mobile-width;
+  color: $main-text;
+  font-size: $font-size--main;
+  font-family: "OpenSans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  line-height: 24px / $font-size--main;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}

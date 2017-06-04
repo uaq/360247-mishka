@@ -1,0 +1,26 @@
+.catalog-item {
+  outline: $temp-ol;
+  padding: 0 30px;
+}
+
+.catalog-item a {
+  text-decoration: none;
+}
+
+.catalog-item__title {
+  margin: 0;
+  color: $secondary-text;
+  font-weight: bold;
+  font-size: $font-size--l;
+  line-height: 24px / $font-size--l;
+}
+
+.catalog-item__info {
+  font-size: $font-size--xs;
+  line-height: 30px / $font-size--xs;
+}
+
+.catalog-item__price {
+  color: $secondary-text;
+  font-weight: bold;
+}

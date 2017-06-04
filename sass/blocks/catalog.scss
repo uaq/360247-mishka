@@ -1,0 +1,11 @@
+.catalog {
+  outline: $temp-ol;
+}
+
+.catalog__title {
+  margin: 0;
+  padding: 0 30px;
+  min-height: 177px;
+  background: $gray;
+  @include title-h2;
+}

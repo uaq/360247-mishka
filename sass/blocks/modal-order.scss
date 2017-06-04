@@ -1,0 +1,20 @@
+.modal-order {
+  outline: $temp-ol;
+  padding: 0 30px;
+}
+
+.modal-order__title {
+  margin: 0;
+  color: $secondary-text;
+  font-weight: bold;
+  font-size: $font-size--xxxl;
+  line-height: 30px / $font-size--xxxl;
+}
+
+.modal-order__item {
+  outline: $temp-ol;
+}
+
+.modal-order__item legend {
+  line-height: 30px / $font-size--main;
+}

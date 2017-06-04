@@ -1,0 +1,27 @@
+.features {
+  outline: $temp-ol;
+  padding: 0 30px;
+}
+
+.features__title {
+  margin: 0;
+  color: $secondary-text;
+  font-weight: bold;
+  font-size: $font-size--xxxl;
+  line-height: 30px / $font-size--xxxl;
+}
+
+.features__list {
+  outline: $temp-ol;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: $secondary-text;
+  font-weight: bold;
+  font-size: $font-size--l;
+  line-height: 20px / $font-size--l;
+}
+
+.features__item {
+  min-height: 110px;
+}

@@ -1,0 +1,26 @@
+.field-text {
+
+}
+
+.field-text__label {
+  @include title-label;
+
+  &--hidden {
+    font-size: 0;
+  }
+}
+
+.field-text textarea {
+  font-family: "OpenSans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.field-text input,
+.field-text textarea {
+  font-size: $font-size--l;
+  line-height: 18px / $font-size--l;
+}
+
+.field-text input::placeholder,
+.field-text textarea::placeholder {
+  color: $main-text;
+}

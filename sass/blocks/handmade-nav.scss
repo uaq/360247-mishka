@@ -1,0 +1,21 @@
+.handmade-nav {
+  outline: $temp-ol;
+}
+
+.handmade-nav__item {
+  display: block;
+  min-height: 103px;
+  color: $light-text;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: $font-size--xxl;
+  line-height: 24px / $font-size--xxl;
+}
+
+.handmade-nav__item--interior {
+  background: $light-green;
+}
+
+.handmade-nav__item--toy {
+  background: $green;
+}

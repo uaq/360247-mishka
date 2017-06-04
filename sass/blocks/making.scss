@@ -1,0 +1,19 @@
+.making {
+  outline: $temp-ol;
+  padding: 0 30px;
+}
+
+.making__content {
+  outline: $temp-ol;
+}
+
+.making__title {
+  color: $secondary-text;
+  font-weight: bold;
+  font-size: $font-size--l;
+  line-height: 24px / $font-size--l;
+}
+
+.making__info {
+  font-size: $font-size--xs;
+}

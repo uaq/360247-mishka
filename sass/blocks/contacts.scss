@@ -1,0 +1,28 @@
+.contacts {
+  outline: $temp-ol;
+}
+
+.contacts__title {
+  margin: 0;
+  padding: 0 30px;
+  color: $secondary-text;
+  font-weight: bold;
+  font-size: $font-size--xl;
+  line-height: 30px / $font-size--xl;
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts__item {
+  padding: 0 30px;
+  line-height: 30px / $font-size--main;
+}
+
+.contacts__item a {
+  text-decoration: none;
+  color: $secondary-text;
+}

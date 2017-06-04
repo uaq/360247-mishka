@@ -1,0 +1,13 @@
+.promo-handmade {
+  outline: $temp-ol;
+}
+
+.promo-handmade__header {
+  height: 283px;
+  background: url("../../img/hero-mobile@1x.jpg") no-repeat center -18px;
+}
+
+.promo-handmade__title {
+  margin: 0;
+  @include title-h2;
+}

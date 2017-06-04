@@ -1,0 +1,10 @@
+.page-header {
+  outline: $temp-ol;
+  margin: 0 auto;
+  padding: 0 30px;
+  min-width: $mobile-width;
+}
+
+.page-header__title {
+  font-size: 0;
+}
