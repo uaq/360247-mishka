@@ -9,7 +9,7 @@
 @mixin title-label() {
   color: $secondary-text;
   font-weight: bold;
-  font-size: $font-size--l;
-  line-height: 18px / $font-size--l;
+  font-size: $font-size--lg;
+  line-height: 18px / $font-size--lg;
 }
 //--------------------
