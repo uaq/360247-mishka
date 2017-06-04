@@ -5,10 +5,10 @@
 
 .modal-order__title {
   margin: 0;
-  color: $black;
+  color: $secondary-text;
   font-weight: bold;
-  font-size: $fs-b;
-  line-height: $lh-g;
+  font-size: $font-size--xxxl + px;
+  line-height: 30 / $font-size--xxxl + em;
 }
 
 .modal-order__item {
@@ -16,5 +16,5 @@
 }
 
 .modal-order__item legend {
-  line-height: $lh-b;
+  line-height: 30 / $font-size--main + em;
 }

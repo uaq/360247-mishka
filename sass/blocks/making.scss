@@ -8,12 +8,12 @@
 }
 
 .making__title {
-  color: $black;
+  color: $secondary-text;
   font-weight: bold;
-  font-size: $fs-e;
-  line-height: $lh-d;
+  font-size: $font-size--large + px;
+  line-height: 24 / $font-size--large + em;
 }
 
 .making__info {
-  font-size: $fs-h;
+  font-size: $font-size--xs + px;
 }

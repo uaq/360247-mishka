@@ -9,18 +9,18 @@
 
 .catalog-item__title {
   margin: 0;
-  color: #000000;
+  color: $secondary-text;
   font-weight: bold;
-  font-size: $fs-e;
-  line-height: $lh-d;
+  font-size: $font-size--large + px;
+  line-height: 24 / $font-size--large + em;
 }
 
 .catalog-item__info {
-  font-size: $fs-h;
-  line-height: $lh-a;
+  font-size: $font-size--xs + px;
+  line-height: 30 / $font-size--xs + em;
 }
 
 .catalog-item__price {
-  color: #000000;
+  color: $secondary-text;
   font-weight: bold;
 }

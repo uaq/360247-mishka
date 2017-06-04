@@ -6,7 +6,7 @@
   @include title-label;
 
   &--hidden {
-    font-size: $fs-hidden;
+    font-size: 0;
   }
 }
 
@@ -16,11 +16,11 @@
 
 .field-text input,
 .field-text textarea {
-  font-size: $fs-e;
-  line-height: $lh-l;
+  font-size: $font-size--large + px;
+  line-height: 18 / $font-size--large + em;
 }
 
 .field-text input::placeholder,
 .field-text textarea::placeholder {
-  color: $dark-gray;
+  color: $main-text;
 }

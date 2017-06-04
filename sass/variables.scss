@@ -13,37 +13,20 @@ $black: #000000;
 $white: #ffffff;
 $green:#56c3b2;
 $light-green: #63d1bb;
+//цвета текст
+$main-text: $dark-gray;
+$secondary-text: $black;
+$light-text: $white;
+$legend-text: $light-green;
 //--------------------
 
-//font-size
-$fs-hidden: 0;
-$fs-main: 15px;
-
-$fs-a: 27px;
-$fs-b: 25px;
-$fs-c: 19px;
-$fs-d: 18px;
-$fs-e: 17px;
-$fs-f: 14px;
-$fs-h: 13px;
-//--------------------
-
-//line-height
-$lh-main: 24 / 15;
-
-$lh-a: 30 / 13;
-$lh-b: 30 / 15;
-$lh-c: 30 / 18;
-$lh-d: 24 / 17;
-$lh-e: 20 / 15;
-$lh-f: 24 / 19;
-$lh-g: 30 / 25;
-$lh-h: 20 / 17;
-$lh-i: 16 / 14;
-$lh-j: 17 / 15;
-$lh-k: 30 / 27;
-$lh-l: 18 / 17;
-$lh-m: 18 / 19;
-$lh-n: 16 / 17;
-$lh-o: 30 / 17;
+//font-size(px)
+$font-size--xxxxl: 27;
+$font-size--xxxl: 25;
+$font-size--xxl: 19;
+$font-size--xl: 18;
+$font-size--large: 17;
+$font-size--main: 15;
+$font-size--small: 14;
+$font-size--xs: 13;
 //--------------------

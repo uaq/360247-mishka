@@ -5,10 +5,11 @@
 .handmade-nav__item {
   display: block;
   min-height: 103px;
-  color: $white;
+  color: $light-text;
   text-decoration: none;
   font-weight: bold;
-  font-size: $fs-c;
+  font-size: $font-size--xxl + px;
+  line-height: 24 / $font-size--xxl + em;
 }
 
 .handmade-nav__item--interior {

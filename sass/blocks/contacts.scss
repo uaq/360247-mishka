@@ -5,10 +5,10 @@
 .contacts__title {
   margin: 0;
   padding: 0 30px;
-  color: $black;
+  color: $secondary-text;
   font-weight: bold;
-  font-size: $fs-d;
-  line-height: $lh-c;
+  font-size: $font-size--xl + px;
+  line-height: 30 / $font-size--xl + em;
 }
 
 .contacts__list {
@@ -19,10 +19,10 @@
 
 .contacts__item {
   padding: 0 30px;
-  line-height: $lh-b;
+  line-height: 30 / $font-size--main + em;
 }
 
 .contacts__item a {
   text-decoration: none;
-  color: #000000;
+  color: $secondary-text;
 }

@@ -5,8 +5,8 @@
 
 .reviews__title {
   margin: 0;
-  color: $black;
+  color: $secondary-text;
   font-weight: bold;
-  font-size: $fs-b;
-  line-height: $lh-g;
+  font-size: $font-size--xxxl + px;
+  line-height: 30 / $font-size--xxxl + em;
 }

@@ -11,7 +11,7 @@
 }
 
 .knitting__info {
-  font-size: $fs-h;
+  font-size: $font-size--xs + px;
 }
 
 .knitting__order {
@@ -19,13 +19,13 @@
 }
 
 .knitting__legend {
-  color: $light-green;
+  color: $legend-text;
   font-weight: bold;
-  font-size: $fs-e;
-  line-height: $lh-l;
+  font-size: $font-size--large + px;
+  line-height: 18 / $font-size--large + em;
 }
 
 .knitting__required {
-  font-size: $fs-f;
-  line-height: $lh-i;
+  font-size: $font-size--small + px;
+  line-height: 16 / $font-size--small + em;
 }

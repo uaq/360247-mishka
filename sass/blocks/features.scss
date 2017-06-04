@@ -5,10 +5,10 @@
 
 .features__title {
   margin: 0;
-  color: $black;
+  color: $secondary-text;
   font-weight: bold;
-  font-size: $fs-b;
-  line-height: $lh-g;
+  font-size: $font-size--xxxl + px;
+  line-height: 30 / $font-size--xxxl + em;
 }
 
 .features__list {
@@ -16,10 +16,10 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  color: $black;
+  color: $secondary-text;
   font-weight: bold;
-  font-size: $fs-e;
-  line-height: $lh-h;
+  font-size: $font-size--large + px;
+  line-height: 20 / $font-size--large + em;
 }
 
 .features__item {

@@ -7,12 +7,12 @@
 }
 
 .page-footer__copyright {
-  color: $black;
+  color: $secondary-text;
   font-weight: bold;
-  font-size: $fs-c;
-  line-height: $lh-m;
+  font-size: $font-size--xxl + px;
+  line-height: 18 / $font-size--xxl + em;
 }
 
 .page-footer__copyright a {
-  font-size: $fs-hidden;
+  font-size: 0;
 }

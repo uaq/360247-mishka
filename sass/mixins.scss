@@ -1,15 +1,15 @@
 //Заголовки
 @mixin title-h2() {
-  color: $black;
+  color: $secondary-text;
   font-weight: bold;
-  font-size: $fs-a;
-  line-height: $lh-k;
+  font-size: $font-size--xxxxl + px;
+  line-height: 30 / $font-size--xxxxl + em;
 }
 
 @mixin title-label() {
-  color: $black;
+  color: $secondary-text;
   font-weight: bold;
-  font-size: $fs-e;
-  line-height: $lh-l;
+  font-size: $font-size--large + px;
+  line-height: 18 / $font-size--large + em;
 }
 //--------------------
