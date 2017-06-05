@@ -8,6 +8,7 @@
 }
 
 .making__title {
+  margin: 0;
   color: $secondary-text;
   font-weight: bold;
   font-size: $font-size--lg;
@@ -16,4 +17,44 @@
 
 .making__info {
   font-size: $font-size--xs;
+}
+
+.making__play {
+  display: none;
+}
+
+@media #{$tablet-media} {
+
+  .making {
+    margin: 0 auto;
+    padding: 0;
+    padding: 0 50px;
+    width: $tablet-width;
+  }
+}
+
+@media #{$desktop-media} {
+
+  .making {
+    width: $desktop-width;
+  }
+
+  .making__content {
+    position: relative;
+  }
+
+  .making__video {
+    position: absolute;
+    top: 0;
+  }
+
+  .making__info,
+  .making__title,
+  .making__order{
+    padding-left: 680px;
+  }
+
+  .making__title {
+    padding-top: 70px;
+  }
 }

@@ -26,3 +26,53 @@
   text-decoration: none;
   color: $secondary-text;
 }
+
+@media #{$tablet-media} {
+
+  .contacts {
+    margin: 0 auto;
+    padding: 0 50px;
+    width: $tablet-width;
+  }
+
+  .contacts__list {
+    display: flex;
+  }
+
+  .contacts__item {
+    padding: 0;
+    display: flex;
+  }
+
+  .contacts__address {
+    min-width: 75px;
+  }
+}
+
+@media #{$desktop-media} {
+
+  .contacts {
+    position: relative;
+    width: $desktop-width;
+    min-height: 610px;
+  }
+
+  .contacts__map {
+    position: absolute;
+    top: 0;
+    right: 50px;
+  }
+
+  .contacts__title {
+    padding: 0;
+  }
+
+  .contacts__list {
+    display: block;
+    width: 525px;
+  }
+
+  .contacts__item {
+    display: list-item;
+  }
+}

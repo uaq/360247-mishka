@@ -6,6 +6,10 @@
   background: $gray;
 }
 
+.page-footer__logo {
+  display: none;
+}
+
 .page-footer__copyright {
   color: $secondary-text;
   font-weight: bold;
@@ -16,3 +20,26 @@
 .page-footer__copyright a {
   font-size: 0;
 }
+
+@media #{$tablet-media} {
+
+  .page-footer {
+    width: $tablet-width;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between
+  }
+
+  .page-footer__logo {
+  display: block;
+}
+}
+
+@media #{$desktop-media} {
+
+  .page-footer {
+    width: $desktop-width;
+  }
+}
+
+

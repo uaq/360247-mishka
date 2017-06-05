@@ -8,6 +8,7 @@
   min-height: 177px;
   background: $gray;
   @include title-h2;
+  padding-top: 70px; /*--temp--*/
 }
 
 .knitting__info {
@@ -28,4 +29,44 @@
 .knitting__required {
   font-size: $font-size--sm;
   line-height: 16px / $font-size--sm;
+}
+
+@media #{$tablet-media} {
+
+  .knitting {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -88px;
+    width: $tablet-width;
+  }
+
+  .knitting__title {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .knitting__order {
+    padding: 0 50px;
+  }
+
+  .knitting__type {
+  }
+
+  .knitting__color {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .type-checkbox {
+    width: 45%;
+    margin-top: 10px;
+    background: red;
+  }
+}
+
+@media #{$desktop-media} {
+
+  .knitting {
+    width: $desktop-width;
+  }
 }

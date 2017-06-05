@@ -10,4 +10,23 @@
 .promo-handmade__title {
   margin: 0;
   @include title-h2;
+  padding-top: 100px; /*--temp--*/
+}
+
+@media #{$tablet-media} {
+
+  .promo-handmade {
+    margin-top: -88px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 50px;
+    width: $tablet-width;
+  }
+}
+
+@media #{$desktop-media} {
+
+  .promo-handmade {
+    width: $desktop-width;
+  }
 }

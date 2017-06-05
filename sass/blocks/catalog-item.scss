@@ -24,3 +24,18 @@
   color: $secondary-text;
   font-weight: bold;
 }
+
+@media #{$tablet-media} {
+
+  .catalog-item {
+    display: flex;
+    padding: 0 50px;
+  }
+}
+
+@media #{$desktop-media} {
+
+  .catalog-item {
+    display: block;
+  }
+}

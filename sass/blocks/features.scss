@@ -25,3 +25,52 @@
 .features__item {
   min-height: 110px;
 }
+
+@media #{$tablet-media} {
+
+  .features {
+    margin: 0 auto;
+    padding: 0 50px;
+    width: $tablet-width;
+  }
+
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    width: 50%;
+  }
+
+  .features__item--eco {
+    order: 1;
+  }
+
+  .features__item--with-love {
+    order: 2;
+  }
+
+  .features__item--cheap {
+    order: 3;
+  }
+
+  .features__item--domestic {
+    order: 4;
+  }
+
+  .features__item--thumb-up {
+    order: 5;
+  }
+
+  .features__item--gift-wrap {
+    order: 6;
+  }
+}
+
+@media #{$desktop-media} {
+
+  .features {
+    width: $desktop-width;
+  }
+}

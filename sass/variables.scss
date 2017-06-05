@@ -4,8 +4,11 @@ $temp-ol: 1px solid blue;
 
 //ширина
 $mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1150px;
+$tablet-media: (min-width: $tablet-width);
+$desktop-media: (min-width: $desktop-width);
 //--------------------
-
 //цвета
 $gray: #f1f1f1;
 $dark-gray: #444444;
