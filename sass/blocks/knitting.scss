@@ -20,6 +20,7 @@
 }
 
 .knitting__legend {
+  margin: 0;
   color: $legend-text;
   font-weight: bold;
   font-size: $font-size--lg;
@@ -49,18 +50,32 @@
     padding: 0 50px;
   }
 
-  .knitting__type {
+  .knitting__legend {
+    width: 30%;
   }
 
-  .knitting__color {
+  .knitting__type,
+  .knitting__color,
+  .knitting__identity,
+  .knitting__tel,
+  .knitting__email,
+  .knitting__additionall {
+    display: flex;
+  }
+
+  .knitting__inner-wrap {
+    width: 70%;
+  }
+
+  .knitting__inner-wrap--checkbox {
     display: flex;
     flex-wrap: wrap;
-  }
+}
 
   .type-checkbox {
-    width: 45%;
+    width: 50%;
     margin-top: 10px;
-    background: red;
+    background: lightgreen;
   }
 }
 
