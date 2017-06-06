@@ -14,8 +14,8 @@
 .item-ot-week__subtitle {
   color: $legend-text;
   font-weight: bold;
-  font-size: $font-size--l;
-  line-height: 20px / $font-size--l;
+  font-size: $font-size--lg;
+  line-height: 20px / $font-size--lg;
 }
 
 .item-ot-week__info {
@@ -32,8 +32,112 @@
 
 .item-ot-week__price {
   font-weight: bold;
-  font-size: $font-size--l;
+  font-size: $font-size--lg;
 }
 
 .item-ot-week__order {
+}
+
+@media #{$tablet-media} {
+
+  .item-ot-week {
+    position: relative;
+    width: $tablet-width;
+    margin: 0 auto;
+    padding: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .item-ot-week__title {
+    width: 81%;
+    min-height: 70px;
+    order: 1;
+  }
+
+  .item-ot-week__subtitle {
+    width: 19%;
+    min-height: 70px;
+    order: 2;
+  }
+
+  .item-ot-week__text {
+    order: 3;
+    width: 50%;
+    min-height: 240px;
+    order: 3;
+  }
+
+  .item-ot-week__info {
+    margin: 0;
+    min-height: 50%;
+  }
+
+  .item-ot-week__img {
+    position: absolute;
+    right: 0;
+    top: 70px;
+    outline: $temp-ol;
+    width: 50%;
+    height: 400px;
+  }
+
+  .item-ot-week__list {
+    min-height: 50%;
+  }
+
+  .item-ot-week__price {
+    width: 51%;
+    min-height: 110px;
+    order: 4;
+  }
+
+  .item-ot-week__order {
+    outline: $temp-ol;
+    width: 50%;
+    min-height: 51px;
+    order: 5;
+  }
+}
+
+@media #{$desktop-media} {
+
+  .item-ot-week {
+    width: $desktop-width;
+  }
+
+  .item-ot-week__title {
+    position: absolute;
+    right: -500px;
+    left: 400px;
+  }
+  .item-ot-week__subtitle {
+    position: absolute;
+  }
+
+  .item-ot-week__img {
+    height: 570px;
+    top: 0;
+    z-index: -1;
+  }
+
+  .item-ot-week__text {
+    width: 350px;
+    min-height: 410px;
+    margin-left: 175px;
+  }
+
+  .item-ot-week__info {
+    padding-top: 20%;
+  }
+
+  .item-ot-week__price {
+    margin-left: 175px;
+    outline: $temp-ol;
+  }
+
+  .item-ot-week__order {
+    margin-left: 175px;
+    width: 350px;
+  }
 }

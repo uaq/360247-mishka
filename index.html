@@ -9,9 +9,11 @@
   <body class="page">
     <header class="page-header">
       <h1 class="page-header__title">Мишка</h1> <!--скрыт-->
-      <div class="page-header__logo">
+      <picture class="page-header__logo">
+        <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop(t).png">
+        <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet(t).png">
         <img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
-      </div>
+      </picture>
       <nav class="main-nav"> <!-- "main-nav--open" - открывашка-->
         <span class="main-nav__toggler"><span></span></span>
         <div class="main-nav__wrapper">
@@ -20,6 +22,9 @@
             <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
             <li class="main-nav__item main-nav__item--search"><a href="">Поиск по сайту</a></li>
             <li class="main-nav__item main-nav__item--cart"><a href="">Корзина: пока пуста</a></li>
+            <li class="main-nav__item main-nav__item--mobile-hidden main-nav__item--new"><a href="">Новые поступления</a></li>
+            <li class="main-nav__item main-nav__item--mobile-hidden main-nav__item--sale"><a href="">Распродажа</a></li>
+            <li class="main-nav__item main-nav__item--mobile-hidden main-nav__item--delivery"><a href="">Бесплатная доставка по России</a></li>
           </ul>
         </div>
       </nav>
@@ -40,6 +45,7 @@
         <div class="item-ot-week">
           <h2 class="item-ot-week__title">Вязаные корзинки</h2>
           <div class="item-ot-week__subtitle">Товар недели</div>
+          <div class="item-ot-week__text">
           <p class="item-ot-week__info">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
           <ul class="item-ot-week__list">
             <li class="item-ot-week__list-item">
@@ -55,6 +61,7 @@
               <span class="item-ot-week__list-value">15 см</span>
             </li>
           </ul>
+          </div>
           <div class="item-ot-week__img">
             <img src="img/triple-set-mobile@1x.jpg" height="315" alt="Вязаные корзинки">
           </div>
@@ -97,9 +104,9 @@
           <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
           <cite class="quote__author">Анастасия Красильникова</cite>
           <a class="quote__email" href="">@misssssiskras</a>
+          <button class="quote__prev btn" type="button">Предыдущий отзыв</button>
+          <button class="quote__next btn" type="button">Следующий отзыв</button>
         </blockquote>
-        <button class="reviews__prev btn" type="button">Предыдущий отзыв</button>
-        <button class="reviews__next btn" type="button">Следующий отзыв</button>
         <a class="reviews__write btn" href="">Написать</a>
       </section>
       <section class="contacts">
@@ -121,6 +128,11 @@
       </section>
     </main>
     <footer class="page-footer">
+      <picture class="page-footer__logo">
+        <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop(t).png">
+        <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet(t).png">
+        <img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
+      </picture>
       <div class="social">
         <a class="social__item social__item--insta" href="">Мы в Вконтакте</a>
         <a class="social__item social__item--fb" href="">Мы в Фейсбук</a>

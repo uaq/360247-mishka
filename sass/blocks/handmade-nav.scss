@@ -19,3 +19,14 @@
 .handmade-nav__item--toy {
   background: $green;
 }
+
+@media #{$tablet-media} {
+
+  .handmade-nav__links {
+    display: flex;
+  }
+
+  .handmade-nav__item {
+    width: 50%;
+  }
+}

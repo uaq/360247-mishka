@@ -11,8 +11,8 @@
   margin: 0;
   color: $secondary-text;
   font-weight: bold;
-  font-size: $font-size--l;
-  line-height: 24px / $font-size--l;
+  font-size: $font-size--lg;
+  line-height: 24px / $font-size--lg;
 }
 
 .catalog-item__info {
@@ -23,4 +23,19 @@
 .catalog-item__price {
   color: $secondary-text;
   font-weight: bold;
+}
+
+@media #{$tablet-media} {
+
+  .catalog-item {
+    display: flex;
+    padding: 0 50px;
+  }
+}
+
+@media #{$desktop-media} {
+
+  .catalog-item {
+    display: block;
+  }
 }

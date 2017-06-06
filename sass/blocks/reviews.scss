@@ -10,3 +10,30 @@
   font-size: $font-size--xxxl;
   line-height: 30px / $font-size--xxxl;
 }
+
+@media #{$tablet-media} {
+
+  .reviews {
+    margin: 0 auto;
+    padding: 0 50px;
+    width: $tablet-width;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .reviews__title {
+    width: 70%;
+    order: 1;
+  }
+
+  .reviews__write {
+    order: 2;
+  }
+}
+
+@media #{$desktop-media} {
+
+  .reviews {
+    width: $desktop-width;
+  }
+}

@@ -9,8 +9,12 @@
   <body class="page">
     <header class="page-header">
       <h1 class="page-header__title">Мишка</h1> <!--скрыт-->
-      <a class="page-header__logo" href="index.html">
-        <img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
+      <a href="index.html">
+        <picture class="page-header__logo">
+          <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop(t).png">
+          <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet(t).png">
+          <img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
+        </picture>
       </a>
       <nav class="main-nav"> <!-- "main-nav--open" - открывашка-->
         <span class="main-nav__toggler"><span></span></span>
@@ -20,6 +24,9 @@
             <li class="main-nav__item"><a>Вязание на заказ</a></li>
             <li class="main-nav__item main-nav__item--search"><a href="">Поиск по сайту</a></li>
             <li class="main-nav__item main-nav__item--cart"><a href="">Корзина: пока пуста</a></li>
+            <li class="main-nav__item main-nav__item--mobile-hidden main-nav__item--new"><a href="">Новые поступления</a></li>
+            <li class="main-nav__item main-nav__item--mobile-hidden main-nav__item--sale"><a href="">Распродажа</a></li>
+            <li class="main-nav__item main-nav__item--mobile-hidden main-nav__item--delivery"><a href="">Бесплатная доставка по России</a></li>
           </ul>
         </div>
       </nav>
@@ -31,86 +38,105 @@
         </header>
         <form class="knitting__order" action="https://echo.htmlacademy.ru" method="get">
           <p class="knitting__info">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-          <fieldset class="knitting__type">
-            <legend class="knitting__legend">Тип</legend>
-            <div class="type-radio">
-              <input type="radio" name="type-filter" id="accessory" value="Аксессуар для интерьера">
-              <label class="type-radio__label" for="accessory">Аксессуар для интерьера</label>
+          <div class="knitting__type">
+            <h4 class="knitting__legend">Тип</h4>
+            <div class="knitting__inner-wrap">
+              <div class="type-radio">
+                <input type="radio" name="type-filter" id="accessory" value="Аксессуар для интерьера">
+                <label class="type-radio__label" for="accessory">Аксессуар для интерьера</label>
+              </div>
+              <div class="type-radio">
+                <input type="radio" name="type-filter" id="toy" value="Детская игрушка">
+                <label class="type-radio__label" for="toy">Детская игрушка</label>
+              </div>
             </div>
-            <div class="type-radio">
-              <input type="radio" name="type-filter" id="toy" value="Детская игрушка">
-              <label class="type-radio__label" for="toy">Детская игрушка</label>
+          </div>
+          <div class="knitting__color">
+            <h4 class="knitting__legend">Цвет</h4>
+            <div class="knitting__inner-wrap knitting__inner-wrap--checkbox">
+              <div class="type-checkbox">
+                <input type="checkbox" name="color-filter" id="white" value="white">
+                <label class="type-checkbox__label" for="white">Белый</label>
+              </div>
+              <div class="type-checkbox">
+                <input type="checkbox" name="color-filter" id="gray" value="gray">
+                <label class="type-checkbox__label" for="gray">Серый</label>
+              </div>
+              <div class="type-checkbox">
+                <input type="checkbox" name="color-filter" id="tiffany" value="tiffany">
+                <label class="type-checkbox__label" for="tiffany">«Тиффани»</label>
+              </div>
+              <div class="type-checkbox">
+                <input type="checkbox" name="color-filter" id="black" value="black">
+                <label class="type-checkbox__label" for="black">Черный</label>
+              </div>
+              <div class="type-checkbox">
+                <input type="checkbox" name="color-filter" id="pink" value="pink">
+                <label class="type-checkbox__label" for="pink">Розовый</label>
+              </div>
+              <div class="type-checkbox">
+                <input type="checkbox" name="color-filter" id="orange" value="orange">
+                <label class="type-checkbox__label" for="orange">Оранжевый</label>
+              </div>
             </div>
-          </fieldset>
-          <fieldset class="knitting__color">
-            <legend class="knitting__legend">Цвет</legend>
-            <div class="type-checkbox">
-              <input type="checkbox" name="color-filter" id="white" value="white">
-              <label class="type-checkbox__label" for="white">Белый</label>
+          </div>
+          <div class="knitting__identity">
+            <h4 class="knitting__legend">ФИО</h4>
+            <div class="knitting__inner-wrap">
+              <div class="field-text">
+                <label class="field-text__label" for="name-field">Имя:</label>
+                <input type="text" name="name-field" id="name-field" placeholder="Введите ваше имя*" required>
+              </div>
+              <div class="field-text">
+                <label class="field-text__label" for="lastname-field">Фамилия:</label>
+                <input type="text" name="lastname-field" id="lastname-field" placeholder="Укажите фамилию*" required>
+              </div>
+              <div class="field-text">
+                <label class="field-text__label" for="patronymic-field">Отчество:</label>
+                <input type="text" name="patronymic-field" id="patronymic-field" placeholder="Отчество, если желаете">
+              </div>
             </div>
-            <div class="type-checkbox">
-              <input type="checkbox" name="color-filter" id="gray" value="gray">
-              <label class="type-checkbox__label" for="gray">Серый</label>
+          </div>
+          <div class="knitting__tel">
+            <h4 class="knitting__legend">Тел</h4>
+            <div class="knitting__inner-wrap">
+              <div class="field-text field-text--tel">
+                <label class="field-text__label field-text__label--hidden" for="phone-field">Телефон</label> <!-- скрыть содержание label -->
+                <input type="tel" name="phone-field" id="phone-field" pattern="\+7\ [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 ХХХ ХХ ХХ*" required>
+              </div>
             </div>
-            <div class="type-checkbox">
-              <input type="checkbox" name="color-filter" id="tiffany" value="tiffany">
-              <label class="type-checkbox__label" for="tiffany">«Тиффани»</label>
+          </div>
+          <div class="knitting__email">
+            <h4 class="knitting__legend">E-mail</h4>
+            <div class="knitting__inner-wrap">
+              <div class="field-text field-text--email">
+                <label class="field-text__label field-text__label--hidden" for="email-field">Электронная почта</label> <!-- скрыть содержание label -->
+                <input type="email" name="email-field" id="email-field" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" placeholder="Ваш Email*" required>
+              </div>
             </div>
-            <div class="type-checkbox">
-              <input type="checkbox" name="color-filter" id="black" value="black">
-              <label class="type-checkbox__label" for="black">Черный</label>
+          </div>
+          <div class="knitting__additionall">
+            <h4 class="knitting__legend">Доп</h4>
+            <div class="knitting__inner-wrap">
+              <div class="field-text">
+                <label class="field-text__label field-text__label--hidden" for="additionall-area">Дополнительная информация</label> <!-- скрыть содержание label -->
+                <textarea name="additionall-area" id="additionall-area" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </div>
             </div>
-            <div class="type-checkbox">
-              <input type="checkbox" name="color-filter" id="pink" value="pink">
-              <label class="type-checkbox__label" for="pink">Розовый</label>
-            </div>
-            <div class="type-checkbox">
-              <input type="checkbox" name="color-filter" id="orange" value="orange">
-              <label class="type-checkbox__label" for="orange">Оранжевый</label>
-            </div>
-          </fieldset>
-          <fieldset class="knitting__identity">
-            <legend class="knitting__legend">ФИО</legend>
-            <div class="field-text">
-              <label class="field-text__label" for="name-field">Имя:</label>
-              <input type="text" name="name-field" id="name-field" placeholder="Введите ваше имя*" required>
-            </div>
-            <div class="field-text">
-              <label class="field-text__label" for="lastname-field">Фамилия:</label>
-              <input type="text" name="lastname-field" id="lastname-field" placeholder="Укажите фамилию*" required>
-            </div>
-            <div class="field-text">
-              <label class="field-text__label" for="patronymic-field">Отчество:</label>
-              <input type="text" name="patronymic-field" id="patronymic-field" placeholder="Отчество, если желаете">
-            </div>
-          </fieldset>
-          <fieldset class="knitting__tel">
-            <legend class="knitting__legend">Тел</legend>
-            <div class="field-text field-text--tel">
-              <label class="field-text__label field-text__label--hidden" for="phone-field">Телефон</label> <!-- скрыть содержание label -->
-              <input type="tel" name="phone-field" id="phone-field" pattern="\+7\ [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 ХХХ ХХ ХХ*" required>
-            </div>
-          </fieldset>
-          <fieldset class="knitting__email">
-            <legend class="knitting__legend">E-mail</legend>
-            <div class="field-text field-text--email">
-              <label class="field-text__label field-text__label--hidden" for="email-field">Электронная почта</label> <!-- скрыть содержание label -->
-              <input type="email" name="email-field" id="email-field" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" placeholder="Ваш Email*" required>
-            </div>
-          </fieldset>
-          <fieldset class="knitting__additionall">
-            <legend class="knitting__legend">Доп</legend>
-            <div class="field-text">
-              <label class="field-text__label field-text__label--hidden" for="additionall-area">Дополнительная информация</label> <!-- скрыть содержание label -->
-              <textarea name="additionall-area" id="additionall-area" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-            </div>
-          </fieldset>
+          </div>
           <p class="knitting__required">*Поля обязательны для заполнения</p>
           <button class="knitting__submit btn" type="submit" name="submit-btn" id="submit-btn" value="sent from">Отправить заказ</button>
         </form>
       </section>
     </main>
     <footer class="page-footer">
+      <a href="index.html">
+        <picture class="page-footer__logo">
+          <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop(t).png">
+          <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet(t).png">
+          <img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
+        </picture>
+      </a>
       <div class="social">
         <a class="social__item social__item--insta" href="">Мы в Вконтакте</a>
         <a class="social__item social__item--fb" href="">Мы в Фейсбук</a>

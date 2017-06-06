@@ -1,22 +1,53 @@
 .quote {
   outline: $temp-ol;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .quote p {
+  width: 100%;
   line-height: 30px / $font-size--main;
 }
 
 .quote__author {
+  width: 100%;
   color: $secondary-text;
   font-weight: bold;
-  font-size: $font-size--l;
-  line-height: 24px / $font-size--l;
+  font-size: $font-size--lg;
+  line-height: 24px / $font-size--lg;
   font-style: normal;
 }
 
 .quote__email {
+  width: 100%;
   text-decoration: none;
-  font-size: $font-size--l;
-  line-height: 30px / $font-size--l;
+  font-size: $font-size--lg;
+  line-height: 30px / $font-size--lg;
+}
+
+.quote__prev {
+  width: 50%;
+}
+
+.quote__next {
+  width: 50%;
+}
+
+@media #{$tablet-media} {
+
+  .quote {
+    order: 3;
+  }
+  .quote__email {
+    width: 70%;
+  }
+
+  .quote__prev {
+    width: 15%;
+  }
+
+  .quote__next {
+    width: 15%;
+  }
 }

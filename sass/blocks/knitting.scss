@@ -8,6 +8,7 @@
   min-height: 177px;
   background: $gray;
   @include title-h2;
+  padding-top: 70px; /*--temp--*/
 }
 
 .knitting__info {
@@ -19,13 +20,68 @@
 }
 
 .knitting__legend {
+  margin: 0;
   color: $legend-text;
   font-weight: bold;
-  font-size: $font-size--l;
-  line-height: 18px / $font-size--l;
+  font-size: $font-size--lg;
+  line-height: 18px / $font-size--lg;
 }
 
 .knitting__required {
-  font-size: $font-size--s;
-  line-height: 16px / $font-size--s;
+  font-size: $font-size--sm;
+  line-height: 16px / $font-size--sm;
+}
+
+@media #{$tablet-media} {
+
+  .knitting {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -88px;
+    width: $tablet-width;
+  }
+
+  .knitting__title {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .knitting__order {
+    padding: 0 50px;
+  }
+
+  .knitting__legend {
+    width: 30%;
+  }
+
+  .knitting__type,
+  .knitting__color,
+  .knitting__identity,
+  .knitting__tel,
+  .knitting__email,
+  .knitting__additionall {
+    display: flex;
+  }
+
+  .knitting__inner-wrap {
+    width: 70%;
+  }
+
+  .knitting__inner-wrap--checkbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+  .type-checkbox {
+    width: 50%;
+    margin-top: 10px;
+    background: lightgreen;
+  }
+}
+
+@media #{$desktop-media} {
+
+  .knitting {
+    width: $desktop-width;
+  }
 }

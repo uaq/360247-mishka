@@ -4,8 +4,11 @@ $temp-ol: 1px solid blue;
 
 //ширина
 $mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1150px;
+$tablet-media: (min-width: $tablet-width);
+$desktop-media: (min-width: $desktop-width);
 //--------------------
-
 //цвета
 $gray: #f1f1f1;
 $dark-gray: #444444;
@@ -25,8 +28,8 @@ $font-size--xxxxl: 27px;
 $font-size--xxxl: 25px;
 $font-size--xxl: 19px;
 $font-size--xl: 18px;
-$font-size--l: 17px;
+$font-size--lg: 17px;
 $font-size--main: 15px;
-$font-size--s: 14px;
+$font-size--sm: 14px;
 $font-size--xs: 13px;
 //--------------------
