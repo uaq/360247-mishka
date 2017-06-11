@@ -1,5 +1,4 @@
 .handmade-nav {
-  outline: $temp-ol;
 }
 
 .handmade-nav__item {
@@ -13,20 +12,51 @@
 }
 
 .handmade-nav__item--interior {
+  position: relative;
   background: $light-green;
 }
 
+.handmade-nav__item--interior::after {
+  content: "";
+  position: absolute;
+  top: 21px;
+  right: 35px;
+  width: 45px;
+  height: 65px;
+  background: url("../img/icon-interior.svg") no-repeat center;
+  opacity: 0.5;
+}
+
 .handmade-nav__item--toy {
+  position: relative;
   background: $green;
 }
 
-@media #{$tablet-media} {
-
-  .handmade-nav__links {
-    display: flex;
-  }
-
-  .handmade-nav__item {
-    width: 50%;
-  }
+.handmade-nav__item--toy::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  width: 65px;
+  height: 65px;
+  background: url("../img/icon-toy.svg") no-repeat center;
+  opacity: 0.5;
 }
+
+.handmade-nav__item span {
+  margin-left: 28px;
+  padding-top: 25px;
+  display: block;
+  width: 110px;
+}
+//
+//@media (min-width: $screen-tablet) {
+//
+//  .handmade-nav__links {
+//    display: flex;
+//  }
+//
+//  .handmade-nav__item {
+//    width: 50%;
+//  }
+//}

@@ -1,16 +1,18 @@
 .quote {
-  outline: $temp-ol;
   margin: 0;
+  padding-bottom: 13px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .quote p {
+  padding-top: 10px;
   width: 100%;
   line-height: 30px / $font-size--main;
 }
 
 .quote__author {
+  padding-top: 11px;
   width: 100%;
   color: $secondary-text;
   font-weight: bold;
@@ -20,34 +22,43 @@
 }
 
 .quote__email {
+  padding-top: 3px;
+  padding-bottom: 4px;
   width: 100%;
+  color: $dark-gray;
   text-decoration: none;
   font-size: $font-size--lg;
   line-height: 30px / $font-size--lg;
 }
 
-.quote__prev {
-  width: 50%;
-}
-
+.quote__prev,
 .quote__next {
+  padding: 0;
   width: 50%;
+  font-size: 0;
+  background: #ffffff url("../img/icon-right-arrow.svg") no-repeat 37px 12px;
+  border: 1px solid $gray-2;
 }
 
-@media #{$tablet-media} {
-
-  .quote {
-    order: 3;
-  }
-  .quote__email {
-    width: 70%;
-  }
-
-  .quote__prev {
-    width: 15%;
-  }
-
-  .quote__next {
-    width: 15%;
-  }
+.quote__prev {
+  border-right: none;
+  background: url("../img/icon-left-arrow.svg") no-repeat 37px 12px;
 }
+//
+//@media (min-width: $screen-tablet) {
+//
+//  .quote {
+//    order: 3;
+//  }
+//  .quote__email {
+//    width: 70%;
+//  }
+//
+//  .quote__prev {
+//    width: 15%;
+//  }
+//
+//  .quote__next {
+//    width: 15%;
+//  }
+//}

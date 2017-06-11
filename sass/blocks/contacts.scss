@@ -1,10 +1,11 @@
 .contacts {
-  outline: $temp-ol;
+  padding-bottom: 39px;
 }
 
 .contacts__title {
   margin: 0;
   padding: 0 30px;
+  padding-top: 86px;
   color: $secondary-text;
   font-weight: bold;
   font-size: $font-size--xl;
@@ -18,61 +19,97 @@
 }
 
 .contacts__item {
+  display: flex;
   padding: 0 30px;
+  padding-top: 27px;
   line-height: 30px / $font-size--main;
 }
 
+.contacts__item:not(:first-child) {
+  padding: 30px;
+  padding-bottom: 36px;
+}
+
+.contacts__address {
+  width: 21%;
+}
+
+.contacts__value {
+  width: 79%;
+  padding-left: 22px;
+}
+
 .contacts__item a {
+  position: relative;
   text-decoration: none;
   color: $secondary-text;
 }
 
-@media #{$tablet-media} {
-
-  .contacts {
-    margin: 0 auto;
-    padding: 0 50px;
-    width: $tablet-width;
-  }
-
-  .contacts__list {
-    display: flex;
-  }
-
-  .contacts__item {
-    padding: 0;
-    display: flex;
-  }
-
-  .contacts__address {
-    min-width: 75px;
-  }
+.contacts__write-wrapper {
+  padding: 0 30px;
 }
 
-@media #{$desktop-media} {
-
-  .contacts {
-    position: relative;
-    width: $desktop-width;
-    min-height: 610px;
-  }
-
-  .contacts__map {
-    position: absolute;
-    top: 0;
-    right: 50px;
-  }
-
-  .contacts__title {
-    padding: 0;
-  }
-
-  .contacts__list {
-    display: block;
-    width: 525px;
-  }
-
-  .contacts__item {
-    display: list-item;
-  }
+.contacts__write {
+  padding: 3% 19%;
+  margin-top: 33px;
 }
+
+.contacts__item a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 4px;
+  width: 178px;
+  height: 1px;
+  background-color: $light-green-2;
+}
+
+//@media (min-width: $screen-tablet) {
+//
+//  .contacts {
+//    margin: 0 auto;
+//    padding: 0 50px;
+//    width: $tablet-width;
+//  }
+//
+//  .contacts__list {
+//    display: flex;
+//  }
+//
+//  .contacts__item {
+//    padding: 0;
+//    display: flex;
+//  }
+//
+//  .contacts__address {
+//    min-width: 75px;
+//  }
+//}
+//
+//@media (min-width: $screen-desktop) {
+//
+//  .contacts {
+//    position: relative;
+//    width: $desktop-width;
+//    min-height: 610px;
+//  }
+//
+//  .contacts__map {
+//    position: absolute;
+//    top: 0;
+//    right: 50px;
+//  }
+//
+//  .contacts__title {
+//    padding: 0;
+//  }
+//
+//  .contacts__list {
+//    display: block;
+//    width: 525px;
+//  }
+//
+//  .contacts__item {
+//    display: list-item;
+//  }
+//}

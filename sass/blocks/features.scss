@@ -1,10 +1,10 @@
 .features {
-  outline: $temp-ol;
   padding: 0 30px;
 }
 
 .features__title {
   margin: 0;
+  padding-top: 69px;
   color: $secondary-text;
   font-weight: bold;
   font-size: $font-size--xxxl;
@@ -12,8 +12,8 @@
 }
 
 .features__list {
-  outline: $temp-ol;
   margin: 0;
+  margin-top: 1.5px;
   padding: 0;
   list-style: none;
   color: $secondary-text;
@@ -23,54 +23,90 @@
 }
 
 .features__item {
-  min-height: 110px;
+  position: relative;
+  padding-top: 83px;
+  min-height: 123px;
 }
 
-@media #{$tablet-media} {
-
-  .features {
-    margin: 0 auto;
-    padding: 0 50px;
-    width: $tablet-width;
-  }
-
-  .features__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .features__item {
-    width: 50%;
-  }
-
-  .features__item--eco {
-    order: 1;
-  }
-
-  .features__item--with-love {
-    order: 2;
-  }
-
-  .features__item--cheap {
-    order: 3;
-  }
-
-  .features__item--domestic {
-    order: 4;
-  }
-
-  .features__item--thumb-up {
-    order: 5;
-  }
-
-  .features__item--gift-wrap {
-    order: 6;
-  }
+.features__item::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 65px;
+  height: 45px;
 }
 
-@media #{$desktop-media} {
-
-  .features {
-    width: $desktop-width;
-  }
+.features__item--eco::before {
+  background: url("../img/icon-feature-1.svg") no-repeat 8px 5px;
 }
+
+.features__item--cheap::before {
+  background: url("../img/icon-feature-3.svg") no-repeat 0 6px;
+}
+
+.features__item--thumb-up::before {
+  background: url("../img/icon-feature-5.svg") no-repeat 8px 11px;
+}
+
+.features__item--with-love::before {
+  background: url("../img/icon-feature-2.svg") no-repeat 4px 8px;
+}
+
+.features__item--domestic::before {
+  background: url("../img/icon-feature-4.svg") no-repeat -5px 9px;
+}
+
+.features__item--gift-wrap::before {
+  background: url("../img/icon-feature-6.svg") no-repeat 3px 7px;
+}
+
+//
+//@media (min-width: $screen-tablet) {
+//
+//  .features {
+//    margin: 0 auto;
+//    padding: 0 50px;
+//    width: $tablet-width;
+//  }
+//
+//  .features__list {
+//    display: flex;
+//    flex-wrap: wrap;
+//  }
+//
+//  .features__item {
+//    width: 50%;
+//  }
+//
+//  .features__item--eco {
+//    order: 1;
+//  }
+//
+//  .features__item--with-love {
+//    order: 2;
+//  }
+//
+//  .features__item--cheap {
+//    order: 3;
+//  }
+//
+//  .features__item--domestic {
+//    order: 4;
+//  }
+//
+//  .features__item--thumb-up {
+//    order: 5;
+//  }
+//
+//  .features__item--gift-wrap {
+//    order: 6;
+//  }
+//}
+//
+//@media (min-width: $screen-desktop) {
+//
+//  .features {
+//    width: $desktop-width;
+//  }
+//}

@@ -1,21 +1,25 @@
 //временно
 $temp-ol: 1px solid blue;
 //--------------------
-
+@mobile-widths-only: (max-width: 767px);
 //ширина
 $mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1150px;
-$tablet-media: (min-width: $tablet-width);
-$desktop-media: (min-width: $desktop-width);
+$screen-mobile: $mobile-width;
+$screen-tablet: $tablet-width;
+$screen-desktop: $desktop-width;
 //--------------------
+
 //цвета
 $gray: #f1f1f1;
+$gray-2: #ececec;
 $dark-gray: #444444;
 $black: #000000;
 $white: #ffffff;
 $green:#56c3b2;
 $light-green: #63d1bb;
+$light-green-2: #62d1ba;
 //цвета текст
 $main-text: $dark-gray;
 $secondary-text: $black;

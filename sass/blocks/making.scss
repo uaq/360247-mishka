@@ -23,7 +23,7 @@
   display: none;
 }
 
-@media #{$tablet-media} {
+@media (min-width: $screen-tablet) {
 
   .making {
     margin: 0 auto;
@@ -33,7 +33,7 @@
   }
 }
 
-@media #{$desktop-media} {
+@media (min-width: $screen-desktop) {
 
   .making {
     width: $desktop-width;

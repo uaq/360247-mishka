@@ -1,15 +1,149 @@
 .main-nav {
-  outline: $temp-ol;
+  position: relative;
 }
 
-.main-nav__list {
-  margin: 0;
-  padding: 0;
-  min-height: 88px;
-  list-style: none;
+.main-nav__toggle {
+  position: absolute;
+  top: -5px;
+  right: -32px;
+  z-index: 2;
+
+  display: block;
+  width: 70px;
+  height: 50px;
+
+  font-size: 0;
+
+  background-color: $white;
+  cursor: pointer;
+
+  border: none;
+
+  &:hover {
+    background-color: $white;
+  }
+
+  &:active {
+    background-color: $white;
+
+  }
 }
 
-.main-nav__list a {
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 17px;
+
+  width: 20px;
+  height: 2px;
+
+  background-color: #000000;
+  box-shadow: 0 6px 0 0 #000000,
+              0 12px 0 0 #000000;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.3),
+              0 16px 0 0 rgba(0, 0, 0, 0.3);
+}
+
+.main-nav--opened .main-nav__toggle {
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 15px;
+
+    width: 25px;
+    height: 2px;
+
+    background-color: #000000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (max-width: $tablet-width - 1) {
+
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__item {
+    outline: $temp-ol;
+    background: $white;
+    height: 78px;
+    width: 260px;
+
+    &--catalog {
+      position: absolute;
+      top: 58px;
+      z-index: 10;
+    }
+
+    &--form {
+      position: absolute;
+      top: 137px;
+      z-index: 10;
+    }
+
+    &--search {
+      position: absolute;
+      top: 216px;
+      z-index: 10;
+    }
+
+    &--cart {
+      position: absolute;
+      top: 295px;
+      z-index: 10;
+    }
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__item {
+
+    &--catalog,
+    &--form,
+    &--search,
+    &--cart {
+      position: static;
+      display: block;
+      height: 80px;
+    }
+  }
+}
+
+.main-nav__content {
+  position: relative;
+  margin: 0 auto;
+  width: 260px;
+  min-height: 57px;
+}
+
+.main-nav__item {
+}
+
+.main-nav__item a {
   color: $secondary-text;
   text-decoration: none;
   font-weight: bold;
@@ -20,53 +154,90 @@
 .main-nav__item--mobile-hidden {
   display: none;
 }
-
-@media #{$tablet-media} {
-
-  .main-nav__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .main-nav__item {
-    min-height: 88px;
-//    background-color: orange;
-  }
-
-  .main-nav__item--search {
-    margin-left: 321px;
-    width: 82px;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    order: -1;
-  }
-
-  .main-nav__item--cart {
-    width: 265px;
-    order: -1;
-  }
-
-  .main-nav__item--delivery {
-    display: list-item;
-  }
-}
-
-@media #{$desktop-media} {
-
-  .main-nav__item--mobile-hidden {
-    display: list-item;
-  }
-
-  .main-nav__item--search {
-    order: 0;
-  }
-
-  .main-nav__item--cart {
-    order: 0;
-  }
-
-  .main-nav__item--delivery {
-    display: list-item;
-    margin-left: 480px;
-  }
-}
+//
+//@media (min-width: $screen-tablet) {
+//
+//  .main-nav__content {
+//    display: flex;
+//    flex-wrap: wrap;
+//  }
+//
+//  .main-nav__item {
+//    min-height: 88px;
+////    background-color: orange;
+//  }
+//
+//  .page-header__logo {
+//    padding-top: 25px;
+//    width: 321px;
+//    order: 1;
+//  }
+//
+//  .main-nav__item--search {
+////    margin-left: 321px;
+//    width: 82px;
+//    border-left: 2px solid black;
+//    border-right: 2px solid black;
+//    order: 2;
+//  }
+//
+//  .main-nav__item--cart {
+//    width: 265px;
+//    order: 3;
+//  }
+//
+//  .main-nav__item--catalog {
+//    order: 4;
+//  }
+//
+//  .main-nav__item--form {
+//    order: 5;
+//  }
+//
+//  .main-nav__item--delivery {
+//    display: inherit;
+//    order: 6;
+//  }
+//}
+//
+//@media (min-width: $screen-desktop) {
+//
+//  .main-nav__item--mobile-hidden {
+//    display: inherit;
+//  }
+//
+//  .main-nav__item--catalog {
+//    order: 1;
+//  }
+//
+//  .main-nav__item--form {
+//    order: 2;
+//  }
+//
+//  .page-header__logo {
+//    order: 3;
+//  }
+//
+//
+//  .main-nav__item--search {
+//    order: 4;
+//  }
+//
+//
+//  .main-nav__item--cart {
+//    order: 5;
+//  }
+//
+//
+//  .main-nav__item--new {
+//    order: 6;
+//  }
+//
+//  .main-nav__item--sale {
+//    order: 7;
+//  }
+//
+//  .main-nav__item--delivery {
+//    order: 8;
+//  }
+//}

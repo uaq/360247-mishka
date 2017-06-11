@@ -1,2 +1,13 @@
 .btn {
+  display: block;
+  margin-top: 25px;
+  padding: 4% 32%;
+  width: 100%;
+  height: 52px;
+  color: $dark-gray;
+  font-weight: bold;
+  font-size: $font-size--xl;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid $dark-gray;
 }

@@ -1,3 +1,25 @@
 .social {
-  outline: $temp-ol;
+  padding: 0 40px;
+  font-size: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-basis: 81px;
+  border-bottom: 1px solid $gray-2;
+}
+
+.social__item::before {
+  content: "";
+  display: block;
+  margin-top: 23px;
+  width: 30px;
+  height: 30px;
+  background: url("../img/icon-insta.svg") no-repeat 2px 7px;
+}
+
+.social__item--fb::before {
+  background: url("../img/icon-fb.svg") no-repeat 5px 1px;
+}
+
+.social__item--tw::before {
+  background: url("../img/icon-twitter.svg") no-repeat 0 7px;
 }

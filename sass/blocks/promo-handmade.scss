@@ -1,32 +1,34 @@
 .promo-handmade {
-  outline: $temp-ol;
 }
 
 .promo-handmade__header {
-  height: 283px;
-  background: url("../../img/hero-mobile@1x.jpg") no-repeat center -18px;
+  min-height: 282px;
+  background: url("../img/hero-mobile@1x.jpg") no-repeat center -18px;
 }
 
 .promo-handmade__title {
   margin: 0;
+  margin-left: 34px;
+  width: 250px;
   @include title-h2;
-  padding-top: 100px; /*--temp--*/
+  padding-top: 70px;
+  text-align: center;
 }
-
-@media #{$tablet-media} {
-
-  .promo-handmade {
-    margin-top: -88px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 50px;
-    width: $tablet-width;
-  }
-}
-
-@media #{$desktop-media} {
-
-  .promo-handmade {
-    width: $desktop-width;
-  }
-}
+//
+//@media (min-width: $screen-tablet) {
+//
+//  .promo-handmade {
+//    margin-top: -88px;
+//    margin-left: auto;
+//    margin-right: auto;
+//    padding: 0 50px;
+//    width: $tablet-width;
+//  }
+//}
+//
+//@media (min-width: $screen-desktop) {
+//
+//  .promo-handmade {
+//    width: $desktop-width;
+//  }
+//}
