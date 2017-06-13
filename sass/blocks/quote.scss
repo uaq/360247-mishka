@@ -3,22 +3,41 @@
   padding-bottom: 13px;
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $screen-tablet) {
+    order: 2;
+  }
 }
 
 .quote p {
-  padding-top: 10px;
-  width: 100%;
+  margin: 0;
+  padding-top: 24px;
+  width: 260px;
   line-height: 30px / $font-size--main;
+
+  @media (min-width: $screen-tablet) {
+    padding-top: 48px;
+    width: 97%;
+    font-size: $font-size--lg;
+    line-height: 30px / $font-size--lg;
+  }
 }
 
 .quote__author {
-  padding-top: 11px;
+  padding-top: 26px;
   width: 100%;
   color: $secondary-text;
   font-weight: bold;
   font-size: $font-size--lg;
   line-height: 24px / $font-size--lg;
   font-style: normal;
+
+  @media (min-width: $screen-tablet) {
+    padding-top: 59px;
+    width: 65%;
+    font-size: $font-size--xl;
+    line-height: 24px / $font-size--xl;
+  }
 }
 
 .quote__email {
@@ -29,36 +48,38 @@
   text-decoration: none;
   font-size: $font-size--lg;
   line-height: 30px / $font-size--lg;
+
+  @media (min-width: $screen-tablet) {
+    padding-bottom: 33px;
+    width: 65%;
+  }
 }
 
 .quote__prev,
 .quote__next {
   padding: 0;
-  width: 50%;
+  width: 130px;
   font-size: 0;
-  background: #ffffff url("../img/icon-right-arrow.svg") no-repeat 37px 12px;
+  background: #ffffff url("../img/icon-right-arrow.svg") no-repeat 36px 12px;
   border: 1px solid $gray-2;
+
+  @media (min-width: $screen-tablet) {
+    position: absolute;
+    right: 49px;
+    top: 75.5%;
+    width: 11%;
+    background-position: 15px 12px;
+    border: none;
+  }
 }
 
 .quote__prev {
   border-right: none;
-  background: url("../img/icon-left-arrow.svg") no-repeat 37px 12px;
+  background: url("../img/icon-left-arrow.svg") no-repeat 36px 12px;
+
+  @media (min-width: $screen-tablet) {
+    right: 136px;
+    margin-left: 38px;
+    background-position: 15px 12px;
+  }
 }
-//
-//@media (min-width: $screen-tablet) {
-//
-//  .quote {
-//    order: 3;
-//  }
-//  .quote__email {
-//    width: 70%;
-//  }
-//
-//  .quote__prev {
-//    width: 15%;
-//  }
-//
-//  .quote__next {
-//    width: 15%;
-//  }
-//}

@@ -1,27 +1,33 @@
 .page-header {
   margin: 0 auto;
-  padding: 0 30px;
   padding-top: 21px;
   border-top: 1px solid $gray-2;
   border-bottom: 1px solid $gray-2;
-  width: $mobile-width;
+  min-width: $mobile-width;
+
+  @media (min-width: $screen-tablet) {
+    width: $tablet-width;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: $desktop-width;
+  }
 }
 
 .page-header__logo {
-  margin-left: 33%;
+  display: block;
+  margin: 0 auto;
+  width: 86px;
+
+  @media (min-width: $screen-tablet) {
+    margin: 0;
+    padding-top: 22px;
+    width: 321px;
+    order: 1;
+  }
+
+  @media (min-width: $screen-desktop) {
+    order: 3;
+  }
 }
-//
-//@media (min-width: $screen-tablet) {
-//
-//  .page-header {
-//    width: $tablet-width;
-//    padding: 0 50px;
-//  }
-//}
-//
-//@media (min-width: $screen-desktop) {
-//
-//  .page-header {
-//    width: $desktop-width;
-//  }
-//}

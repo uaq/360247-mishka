@@ -1,10 +1,33 @@
 .making {
   outline: $temp-ol;
   padding: 0 30px;
+
+  @media (min-width: $screen-tablet) {
+    margin: 0 auto;
+    padding: 0;
+    padding: 0 50px;
+    width: $tablet-width;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: $desktop-width;
+  }
 }
 
 .making__content {
   outline: $temp-ol;
+
+  @media (min-width: $screen-desktop) {
+    position: relative;
+  }
+}
+
+.making__video {
+
+  @media (min-width: $screen-desktop) {
+    position: absolute;
+    top: 0;
+  }
 }
 
 .making__title {
@@ -13,48 +36,28 @@
   font-weight: bold;
   font-size: $font-size--lg;
   line-height: 24px / $font-size--lg;
+
+  @media (min-width: $screen-desktop) {
+    padding-top: 70px;
+    padding-left: 680px;
+  }
 }
 
 .making__info {
   font-size: $font-size--xs;
+
+  @media (min-width: $screen-desktop) {
+    padding-left: 680px;
+  }
+}
+
+.making__order {
+
+  @media (min-width: $screen-desktop) {
+    padding-left: 680px;
+  }
 }
 
 .making__play {
   display: none;
-}
-
-@media (min-width: $screen-tablet) {
-
-  .making {
-    margin: 0 auto;
-    padding: 0;
-    padding: 0 50px;
-    width: $tablet-width;
-  }
-}
-
-@media (min-width: $screen-desktop) {
-
-  .making {
-    width: $desktop-width;
-  }
-
-  .making__content {
-    position: relative;
-  }
-
-  .making__video {
-    position: absolute;
-    top: 0;
-  }
-
-  .making__info,
-  .making__title,
-  .making__order{
-    padding-left: 680px;
-  }
-
-  .making__title {
-    padding-top: 70px;
-  }
 }

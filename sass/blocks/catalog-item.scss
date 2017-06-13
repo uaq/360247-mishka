@@ -1,6 +1,15 @@
 .catalog-item {
   outline: $temp-ol;
   padding: 0 30px;
+
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    display: block;
+  }
 }
 
 .catalog-item a {
@@ -24,18 +33,3 @@
   color: $secondary-text;
   font-weight: bold;
 }
-//
-//@media (min-width: $screen-tablet) {
-//
-//  .catalog-item {
-//    display: flex;
-//    padding: 0 50px;
-//  }
-//}
-//
-//@media (min-width: $screen-desktop) {
-//
-//  .catalog-item {
-//    display: block;
-//  }
-//}

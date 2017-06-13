@@ -1,52 +1,74 @@
 .page-footer {
-  outline: $temp-ol;
-  margin: 0 auto;
-  padding: 0 30px;
-  width: $mobile-width;
+  min-width: $mobile-width;
   background: $gray;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $screen-tablet) {
+    margin: 0 auto;
+    padding: 0 50px;
+    width: $tablet-width;
+    min-height: 143px;
+    flex-direction: row;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: $desktop-width;
+  }
 }
 
 .page-footer__logo {
   display: none;
+
+  @media (min-width: $screen-tablet) {
+    display: block;
+    padding-top: 50px;
+    width: 38.5%;
+  }
+}
+
+.page-footer__bottom {
+  margin: 0 auto;
+  width: 260px;
+  min-height: 79px;
+
+  @media (min-width: $screen-tablet) {
+    margin: 0;
+    flex-grow: 1;
+  }
 }
 
 .page-footer__copyright {
   margin: 0;
-  padding-left: 38px;
-  padding-top: 21px;
-  min-height: 79px;
+  padding: 0 37px;
+  padding-top: 11px;
   color: $secondary-text;
   font-weight: bold;
   font-size: $font-size--xxl;
   line-height: 18px / $font-size--xxl;
+
+  @media (min-width: $screen-tablet) {
+    padding: 0;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-top: 47px;
+    padding-left: 82px;
+    min-height: 50px;
+  }
 }
 
-.page-footer__copyright a {
-  font-size: 0;
+.page-footer__academy {
   display: inline-block;
-  vertical-align: middle;
-  padding-left: 24px;
+  vertical-align: bottom;
+  margin-left: 25px;
+  padding-top: 12px;
+  width: 27px;
+  height: 34px;
+  font-size: 0;
+
+  @media (min-width: $screen-tablet) {
+    margin-left: 24px;
+    padding-top: 11px;
+
+  }
 }
-//
-//@media (min-width: $screen-tablet) {
-//
-//  .page-footer {
-//    width: $tablet-width;
-//    padding: 0 50px;
-//    display: flex;
-//    justify-content: space-between
-//  }
-//
-//  .page-footer__logo {
-//  display: block;
-//}
-//}
-//
-//@media (min-width: $screen-desktop) {
-//
-//  .page-footer {
-//    width: $desktop-width;
-//  }
-//}

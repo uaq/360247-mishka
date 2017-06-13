@@ -1,5 +1,16 @@
 .knitting {
   outline: $temp-ol;
+
+  @media (min-width: $screen-tablet) {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -88px;
+    width: $tablet-width;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: $desktop-width;
+  }
 }
 
 .knitting__title {
@@ -9,6 +20,11 @@
   background: $gray;
   @include title-h2;
   padding-top: 70px; /*--temp--*/
+
+  @media (min-width: $screen-tablet) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 .knitting__info {
@@ -17,6 +33,10 @@
 
 .knitting__order {
   padding: 0 30px;
+
+  @media (min-width: $screen-tablet) {
+    padding: 0 50px;
+  }
 }
 
 .knitting__legend {
@@ -25,63 +45,48 @@
   font-weight: bold;
   font-size: $font-size--lg;
   line-height: 18px / $font-size--lg;
+
+  @media (min-width: $screen-tablet) {
+    width: 30%;
+  }
+}
+
+.knitting__inner-wrapper {
+
+  @media (min-width: $screen-tablet) {
+    width: 70%;
+  }
+
+  &--checkbox {
+
+    @media (min-width: $screen-tablet) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.type-checkbox {
+  @media (min-width: $screen-tablet) {
+    width: 50%;
+    margin-top: 10px;
+    background: lightgreen;
+  }
+}
+
+.knitting__type,
+.knitting__color,
+.knitting__identity,
+.knitting__tel,
+.knitting__email,
+.knitting__additionall {
+
+  @media (min-width: $screen-tablet) {
+    display: flex;
+  }
 }
 
 .knitting__required {
   font-size: $font-size--sm;
   line-height: 16px / $font-size--sm;
 }
-//
-//@media (min-width: $screen-tablet) {
-//
-//  .knitting {
-//    margin-right: auto;
-//    margin-left: auto;
-//    margin-top: -88px;
-//    width: $tablet-width;
-//  }
-//
-//  .knitting__title {
-//    padding-left: 50px;
-//    padding-right: 50px;
-//  }
-//
-//  .knitting__order {
-//    padding: 0 50px;
-//  }
-//
-//  .knitting__legend {
-//    width: 30%;
-//  }
-//
-//  .knitting__type,
-//  .knitting__color,
-//  .knitting__identity,
-//  .knitting__tel,
-//  .knitting__email,
-//  .knitting__additionall {
-//    display: flex;
-//  }
-//
-//  .knitting__inner-wrapper {
-//    width: 70%;
-//  }
-//
-//  .knitting__inner-wrapper--checkbox {
-//    display: flex;
-//    flex-wrap: wrap;
-//}
-//
-//  .type-checkbox {
-//    width: 50%;
-//    margin-top: 10px;
-//    background: lightgreen;
-//  }
-//}
-//
-//@media (min-width: $screen-desktop) {
-//
-//  .knitting {
-//    width: $desktop-width;
-//  }
-//}
