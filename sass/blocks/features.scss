@@ -1,76 +1,139 @@
 .features {
-  outline: $temp-ol;
-  padding: 0 30px;
+  margin: 0 auto;
+  width: 260px;
+
+  @media (min-width: $screen-tablet) {
+    margin: 0 auto;
+    padding: 0 50px;
+    width: $tablet-width;
+  }
+
+  @media (min-width: $screen-desktop) {
+    outline: $temp-ol;
+    width: $desktop-width;
+  }
 }
 
 .features__title {
   margin: 0;
+  padding-top: 69px;
   color: $secondary-text;
   font-weight: bold;
   font-size: $font-size--xxxl;
   line-height: 30px / $font-size--xxxl;
+
+  @media (min-width: $screen-tablet) {
+    padding-top: 118px;
+    font-size: $font-size--xxxxxl;
+    line-height: 50px / $font-size--xxxxxl;
+  }
 }
 
 .features__list {
-  outline: $temp-ol;
-  margin: 0;
+  margin-top: 1.5px;
   padding: 0;
   list-style: none;
   color: $secondary-text;
   font-weight: bold;
   font-size: $font-size--lg;
   line-height: 20px / $font-size--lg;
-}
 
-.features__item {
-  min-height: 110px;
-}
-
-@media #{$tablet-media} {
-
-  .features {
-    margin: 0 auto;
-    padding: 0 50px;
-    width: $tablet-width;
-  }
-
-  .features__list {
+  @media (min-width: $screen-tablet) {
+    margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
   }
-
-  .features__item {
-    width: 50%;
-  }
-
-  .features__item--eco {
-    order: 1;
-  }
-
-  .features__item--with-love {
-    order: 2;
-  }
-
-  .features__item--cheap {
-    order: 3;
-  }
-
-  .features__item--domestic {
-    order: 4;
-  }
-
-  .features__item--thumb-up {
-    order: 5;
-  }
-
-  .features__item--gift-wrap {
-    order: 6;
-  }
 }
 
-@media #{$desktop-media} {
+.features__item {
+  position: relative;
+  padding-top: 83px;
+  min-height: 123px;
 
-  .features {
-    width: $desktop-width;
+  @media (min-width: $screen-tablet) {
+    padding-top: 91px;
+    width: 50%;
+    min-height: 155px;
+    font-size: $font-size--tempName;
+    font-weight: 22px / $font-size--tempName;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 65px;
+    height: 45px;
+    @media (min-width: $screen-tablet) {
+      top: 35px;
+      left: 1px;
+    }
+  }
+
+  &--eco {
+
+    &::before {
+      background: url("../img/icon-feature-1.svg") no-repeat 7px 5px;
+    }
+
+    @media (min-width: $screen-tablet) {
+      order: 1;
+    }
+  }
+
+  &--with-love {
+
+    &::before {
+      background: url("../img/icon-feature-2.svg") no-repeat 3px 8px;
+    }
+
+    @media (min-width: $screen-tablet) {
+      order: 2;
+    }
+  }
+
+  &--cheap {
+
+    &::before {
+      background: url("../img/icon-feature-3.svg") no-repeat 0 6px;
+    }
+
+    @media (min-width: $screen-tablet) {
+      order: 3;
+    }
+  }
+
+  &--domestic {
+
+    &::before {
+      background: url("../img/icon-feature-4.svg") no-repeat -5px 8px;
+    }
+
+    @media (min-width: $screen-tablet) {
+      order: 4;
+    }
+  }
+
+  &--thumb-up {
+
+    &::before {
+      background: url("../img/icon-feature-5.svg") no-repeat 7px 10px;
+    }
+
+    @media (min-width: $screen-tablet) {
+      order: 5;
+    }
+  }
+
+  &--gift-wrap {
+
+    &::before {
+      background: url("../img/icon-feature-6.svg") no-repeat 2px 7px;
+    }
+
+    @media (min-width: $screen-tablet) {
+      order: 6;
+    }
   }
 }

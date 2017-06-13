@@ -1,8 +1,9 @@
 .modal-order {
   outline: $temp-ol;
+  display: none;
   padding: 0 30px;
   margin: 0 auto;
-  width: 320px;
+  width: $mobile-width;
 }
 
 .modal-order__title {
