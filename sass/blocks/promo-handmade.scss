@@ -3,7 +3,8 @@
   min-width: 320px;
 
   @media (min-width: $screen-tablet) {
-    margin-top: -88px;
+    outline: $temp-ol;
+    margin-top: -89px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 50px;
