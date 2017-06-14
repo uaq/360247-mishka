@@ -1,10 +1,13 @@
 .knitting {
 
   @media (min-width: $screen-tablet) {
-    margin-top: -88px;
+    outline: $temp-ol;
+    margin-top: -90px;
+    border-top: 1px solid $gray-2;
   }
 
   @media (min-width: $screen-desktop) {
+
   }
 }
 
@@ -22,9 +25,13 @@
   @include title-h2;
 
   @media (min-width: $screen-tablet) {
-    padding-left: 50px;
+    padding-left: 188px;
+    padding-top: 92px;
     padding-right: 50px;
     width: $tablet-width;
+    min-height: 225px;
+    font-size: $font-size--xxxxxl;
+    line-height: 50px / $font-size--xxxxxl;
   }
 }
 
@@ -37,6 +44,9 @@
 
   @media (min-width: $screen-tablet) {
     padding: 0 50px;
+    padding-top: 55px;
+    font-size: $font-size--lg;
+    line-height: 30px / $font-size--lg;
   }
 }
 
@@ -57,8 +67,34 @@
   line-height: 18px / $font-size--lg;
   text-transform: uppercase;
 
+  @media (min-width: $screen-tablet) {
+    outline: $temp-ol;
+    width: 25%;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  &--type {
+
+    @media (min-width: $screen-tablet) {
+      margin: 0;
+      padding-top: 56px;
+      padding-left: 1px;
+      min-height: 218px;
+    }
+  }
+
   &--color {
     margin-top: 20px;
+
+    @media (min-width: $screen-tablet) {
+      margin: 0;
+      padding-top: 66px;
+      padding-left: 1px;
+      min-height: 304px;
+    }
   }
 
   &--identity {
@@ -83,20 +119,12 @@
   &--email::before {
     width: 179px;
   }
-
-  @media (min-width: $screen-tablet) {
-    width: 30%;
-
-    &::before {
-      display: none;
-    }
-  }
 }
 
 .knitting__inner-wrapper {
 
   @media (min-width: $screen-tablet) {
-    width: 70%;
+    width: 75%;
   }
 
   &--checkbox {
@@ -104,6 +132,8 @@
     @media (min-width: $screen-tablet) {
       display: flex;
       flex-wrap: wrap;
+//      margin: 0;
+//      padding: 0;
     }
   }
 }

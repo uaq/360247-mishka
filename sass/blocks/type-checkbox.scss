@@ -1,8 +1,8 @@
 .type-checkbox {
 
   @media (min-width: $screen-tablet) {
+    outline: $temp-ol;
     width: 50%;
-    margin-top: 10px;
   }
 }
 
@@ -31,6 +31,15 @@
   cursor: pointer;
   @include title-label;
 
+  @media (min-width: $screen-tablet) {
+    margin: 0;
+    height: 33.3%;
+//    padding-left: 87px;
+    font-size: $font-size--xxl;
+    line-height: 18px / $font-size--xxl;
+//    vertical-align: middle;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -39,6 +48,10 @@
     width: 40px;
     height: 40px;
     border: 2px solid $dark-gray;
+
+    @media (min-width: $screen-tablet) {
+     top: 0;
+    }
   }
 
   &:hover::before {
