@@ -1,8 +1,20 @@
 .field-text {
+  margin-top: 25px;
+  min-height: 67px;
 
+  &--tel {
+    margin: 0;
+    transform: translateY(5px);
+  }
+
+  &--email {
+    margin: 0;
+    transform: translateY(5px);
+  }
 }
 
 .field-text__label {
+  display: block;
   @include title-label;
 
   &--hidden {
@@ -12,12 +24,41 @@
 
 .field-text textarea {
   font-family: "OpenSans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  padding-top: 14px;
+  padding-left: 15px;
+  width: 100%;
+  outline: none;
+  border: 2px solid $dark-gray;
+  height: 142px;
+
+  &:hover,
+  &:focus {
+    border-color: $light-green-2;
+  }
 }
 
 .field-text input,
 .field-text textarea {
   font-size: $font-size--lg;
   line-height: 18px / $font-size--lg;
+}
+
+.field-text input {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 47px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid $black;
+  background-color: transparent;
+  transform: translateY(5px);
+
+  &:hover,
+  &:focus {
+    border-color: $light-green-2;
+  }
 }
 
 .field-text input::placeholder,

@@ -22,6 +22,10 @@
     width: 50%;
   }
 
+  @media (min-width: $screen-desktop) {
+    min-height: 119px;
+  }
+
   &--interior {
     background: $light-green;
 
@@ -38,6 +42,10 @@
       @media (min-width: $screen-tablet) {
         top: 29px;
         right: 10%;
+      }
+
+      @media (min-width: $screen-desktop) {
+        right: 35px;
       }
     }
   }
@@ -59,6 +67,10 @@
         top: 29px;
         right: 9%;
       }
+
+      @media (min-width: $screen-desktop) {
+        right: 32px;
+      }
     }
   }
 }
@@ -74,5 +86,9 @@
     margin-left: 11%;
     font-size: $font-size--tempName;
     line-height: 30px / $font-size--tempName;
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin-left: 7%;
   }
 }

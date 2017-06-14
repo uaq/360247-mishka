@@ -1,4 +1,7 @@
 .main-index {
-  margin: 0 auto;
-  min-width: $mobile-width;
+
+  @media (min-width: $screen-tablet) {
+    margin-top: -90px;
+    border-top: 1px solid $gray-2;
+  }
 }

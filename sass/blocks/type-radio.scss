@@ -1,6 +1,51 @@
 .type-radio {
+
+  :checked ~ label::after {
+    position: absolute;
+    content: "";
+    top: 37px;
+    left: 12px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: $light-green-2;
+  }
+}
+
+.type-radio input[type="radio"] {
+  display: none;
 }
 
 .type-radio__label {
+  position: relative;
+  display: block;
+  min-height: 65px;
+  padding-left: 62px;
+  padding-top: 34px;
+  cursor: pointer;
   @include title-label;
+
+  &--toy {
+    transform: translateY(-9px);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border: 3px solid $dark-gray;
+    border-radius: 50%;
+  }
+
+  &:hover::before {
+    border-color: $light-green-2;
+  }
+
+  &:active::before {
+    border-color: $gray-5;
+  }
 }
+

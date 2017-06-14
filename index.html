@@ -29,15 +29,17 @@
     </header>
     <main class="main-index">
       <section class="promo-handmade">
-        <header class="promo-handmade__header">
-          <h2 class="promo-handmade__title">Милые штуки ручной<br> работы для дома</h2>
-        </header>
-        <nav class="handmade-nav">
-          <div class="handmade-nav__links">
-            <a class="handmade-nav__item handmade-nav__item--interior" href=""><span>Предметы интерьера</span></a>
-            <a class="handmade-nav__item handmade-nav__item--toy" href=""><span>Детские игрушки</span></a>
-          </div>
-        </nav>
+        <div class="promo-handmade__inner-wrapper">
+          <header class="promo-handmade__header">
+            <h2 class="promo-handmade__title">Милые штуки ручной<br> работы для дома</h2>
+          </header>
+          <nav class="handmade-nav">
+            <div class="handmade-nav__links">
+              <a class="handmade-nav__item handmade-nav__item--interior" href=""><span>Предметы интерьера</span></a>
+              <a class="handmade-nav__item handmade-nav__item--toy" href=""><span>Детские игрушки</span></a>
+            </div>
+          </nav>
+        </div>
       </section>
       <section class="promo-week">
         <div class="item-ot-week">
@@ -128,22 +130,24 @@
       </section>
     </main>
     <footer class="page-footer">
-      <picture class="page-footer__logo">
-        <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop(t).png">
-        <source media="(min-width: 575px)" srcset="img/mishka-logo-tablet(t).png">
-        <img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
-      </picture>
-      <div class="social">
-        <a class="social__item social__item--insta" href="">Мы в Вконтакте</a>
-        <a class="social__item social__item--fb" href="">Мы в Фейсбук</a>
-        <a class="social__item social__item--tw" href="">Мы в Твиттер</a>
-      </div>
-      <div class="page-footer__bottom">
-        <p class="page-footer__copyright">Разработано
-          <a class="page-footer__academy" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-            <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
-          </a>
-        </p>
+      <div class="page-footer__inner-wrapper">
+        <picture class="page-footer__logo">
+          <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop(t).png">
+          <source media="(min-width: 668px)" srcset="img/mishka-logo-tablet(t).png">
+          <img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
+        </picture>
+        <div class="social">
+          <a class="social__item social__item--insta" href="">Мы в Вконтакте</a>
+          <a class="social__item social__item--fb" href="">Мы в Фейсбук</a>
+          <a class="social__item social__item--tw" href="">Мы в Твиттер</a>
+        </div>
+        <div class="page-footer__bottom">
+          <p class="page-footer__copyright">Разработано
+            <a class="page-footer__academy" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+              <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
     <script src="js/main-nav.js"></script>

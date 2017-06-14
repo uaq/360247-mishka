@@ -3,14 +3,13 @@
   width: 260px;
 
   @media (min-width: $screen-tablet) {
-    outline: $temp-ol;
     margin: 0 auto;
     padding: 0 50px;
     width: $tablet-width;
   }
 
   @media (min-width: $screen-desktop) {
-    outline: $temp-ol;
+    padding: 0 225px;
     width: $desktop-width;
   }
 }
@@ -27,6 +26,12 @@
     padding-top: 118px;
     font-size: $font-size--xxxxxl;
     line-height: 50px / $font-size--xxxxxl;
+  }
+
+  @media (min-width: $screen-desktop) {
+    font-size: $font-size--xxxxxxl;
+    line-height: 57px / $font-size--xxxxxxl;
+
   }
 }
 

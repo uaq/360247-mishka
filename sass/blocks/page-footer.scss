@@ -1,4 +1,8 @@
 .page-footer {
+  background: $gray;
+}
+
+.page-footer__inner-wrapper {
   min-width: $mobile-width;
   background: $gray;
   display: flex;

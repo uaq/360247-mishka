@@ -1,10 +1,19 @@
 .promo-handmade {
-  width: auto;
-  min-width: 320px;
+  background: $gray-4;
 
   @media (min-width: $screen-tablet) {
-    outline: $temp-ol;
-    margin-top: -89px;
+  }
+
+  @media (min-width: $screen-desktop) {
+  }
+}
+
+.promo-handmade__inner-wrapper {
+  width: auto;
+  min-width: 320px;
+  background: $gray-4;
+
+  @media (min-width: $screen-tablet) {
     margin-left: auto;
     margin-right: auto;
     padding: 0 50px;
@@ -12,6 +21,7 @@
   }
 
   @media (min-width: $screen-desktop) {
+    outline: $temp-ol;
     width: $desktop-width;
   }
 }
@@ -37,5 +47,11 @@
     width: 500px;
     font-size: $font-size--xxxxxl;
     line-height: 50px / $font-size--xxxxxl;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 700px;
+    font-size: $font-size--xxxxxxl;
+    line-height: 57px / $font-size--xxxxxxl;
   }
 }
