@@ -2,14 +2,48 @@
   margin-top: 25px;
   min-height: 67px;
 
-  &--tel {
+  @media (min-width: $screen-tablet) {
     margin: 0;
-    transform: translateY(5px);
+    display: flex;
   }
 
+  &--name {
+
+    @media (min-width: $screen-tablet) {
+      transform: translateY(65px);
+    }
+  }
+
+  &--lastname {
+
+    @media (min-width: $screen-tablet) {
+      transform: translateY(74px);
+    }
+  }
+
+  &--patron {
+
+    @media (min-width: $screen-tablet) {
+      transform: translateY(83px);
+    }
+  }
+
+
+  &--tel,
   &--email {
     margin: 0;
     transform: translateY(5px);
+
+    @media (min-width: $screen-tablet) {
+      transform: translateY(27px);
+    }
+  }
+
+  &--tel {
+
+    @media (min-width: $screen-tablet) {
+      transform: translateY(65px);
+    }
   }
 }
 
@@ -17,8 +51,13 @@
   display: block;
   @include title-label;
 
-  &--hidden {
-    font-size: 0;
+  @media (min-width: $screen-tablet) {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 7px;
+    padding-right: 19px;
+    font-size: $font-size--xxl;
+    line-height: 18px / $font-size--xxl;
   }
 }
 
@@ -31,6 +70,11 @@
   border: 2px solid $dark-gray;
   height: 142px;
 
+  @media (min-width: $screen-tablet) {
+    margin-top: 50px;
+    margin-left: 7px;
+  }
+
   &:hover,
   &:focus {
     border-color: $light-green-2;
@@ -41,6 +85,11 @@
 .field-text textarea {
   font-size: $font-size--lg;
   line-height: 18px / $font-size--lg;
+
+  @media ("min-width: $screen-tablet") {
+    font-size: $font-size--xxl;
+    line-height: 18px / $font-size--xxl;
+  }
 }
 
 .field-text input {
@@ -53,7 +102,17 @@
   border: none;
   border-bottom: 2px solid $black;
   background-color: transparent;
-  transform: translateY(5px);
+  transform: translateY(-10px);
+
+  @media (min-width: $screen-tablet) {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 7px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    width: 100%;
+//    transform: translateY(20px);
+  }
 
   &:hover,
   &:focus {
@@ -64,4 +123,12 @@
 .field-text input::placeholder,
 .field-text textarea::placeholder {
   color: $main-text;
+}
+
+.field-text--name input {
+
+  @media (min-width: $screen-tablet) {
+    width: 83%;
+//    margin-left: 15px;
+  }
 }

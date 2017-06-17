@@ -1,7 +1,6 @@
 .knitting {
 
   @media (min-width: $screen-tablet) {
-    outline: $temp-ol;
     margin-top: -90px;
     border-top: 1px solid $gray-2;
   }
@@ -25,13 +24,21 @@
   @include title-h2;
 
   @media (min-width: $screen-tablet) {
-    padding-left: 188px;
+    padding-left: 24.5%;
     padding-top: 92px;
-    padding-right: 50px;
+    padding-right: 6.5%;
     width: $tablet-width;
     min-height: 225px;
     font-size: $font-size--xxxxxl;
     line-height: 50px / $font-size--xxxxxl;
+  }
+
+  @media (min-width: $screen-desktop) {
+    padding-top: 94px;
+    padding-left: 14%;
+    width: 800px;
+    font-size: $font-size--xxxxxxl;
+    line-height: 57px / $font-size--xxxxxxl;
   }
 }
 
@@ -43,10 +50,16 @@
   line-height: 24px / $font-size--xs;
 
   @media (min-width: $screen-tablet) {
-    padding: 0 50px;
+    padding: 0 6.5%;
     padding-top: 55px;
     font-size: $font-size--lg;
     line-height: 30px / $font-size--lg;
+  }
+
+  @media (min-width: $screen-desktop) {
+    padding-left: 19.5%;
+    padding-top: 134px;
+    width: 980px;
   }
 }
 
@@ -68,8 +81,12 @@
   text-transform: uppercase;
 
   @media (min-width: $screen-tablet) {
+    width: 24%;
+
+  @media (min-width: $screen-desktop) {
     outline: $temp-ol;
-    width: 25%;
+    width: 14%;
+  }
 
     &::before {
       display: none;
@@ -81,8 +98,11 @@
     @media (min-width: $screen-tablet) {
       margin: 0;
       padding-top: 56px;
-      padding-left: 1px;
       min-height: 218px;
+    }
+
+    @media (min-width: $screen-tablet) {
+      min-height: 217px;
     }
   }
 
@@ -92,18 +112,50 @@
     @media (min-width: $screen-tablet) {
       margin: 0;
       padding-top: 66px;
-      padding-left: 1px;
       min-height: 304px;
+    }
+
+    @media (min-width: $screen-desktop) {
+      min-height: 228px;
     }
   }
 
   &--identity {
     margin-top: 33px;
     padding-bottom: 4px;
+
+    @media (min-width: $screen-tablet) {
+      margin: 0;
+      padding-top: 65px;
+      min-height: 304px;
+    }
   }
 
   &--phone {
     margin-top: 33px;
+
+    @media (min-width: $screen-tablet) {
+      margin: 0;
+      padding-top: 67px;
+      height: 114px;
+    }
+  }
+
+  &--email {
+
+    @media (min-width: $screen-tablet) {
+      margin: 0;
+      padding-top: 29px;
+      height: 114px;
+    }
+  }
+
+  &--add {
+
+    @media (min-width: $screen-tablet) {
+      margin: 0;
+      padding-top: 67px;
+    }
   }
 
   &::before {
@@ -132,8 +184,6 @@
     @media (min-width: $screen-tablet) {
       display: flex;
       flex-wrap: wrap;
-//      margin: 0;
-//      padding: 0;
     }
   }
 }
@@ -147,7 +197,8 @@
   padding: 0 30px;
 
   @media (min-width: $screen-tablet) {
-    padding: 0 50px;
+    padding-left: 6.6%;
+    padding-right: 5.8%;
     display: flex;
   }
 }
@@ -163,14 +214,30 @@
 .knitting__required {
   font-size: $font-size--sm;
   line-height: 16px / $font-size--sm;
+
+  @media (min-width: $screen-tablet) {
+    padding-left: 38px;
+    width: 100%;
+    font-size: $font-size--lg;
+    line-height: 30px / $font-size--lg;
+  }
 }
 
 .knitting__required-wrapper {
   transform: translateY(-5px);
+
+  @media (min-width: $screen-tablet) {
+    width: 57%;
+    transform: translateY(-7px);
+  }
 }
 
 .knitting__submit-wrapper {
-  min-height: 107px;
+  min-height: 102px;
+
+  @media (min-width: $screen-tablet) {
+    width: 43%;
+  }
 }
 
 .knitting__required-wrapper,
@@ -178,7 +245,7 @@
   padding: 0 30px;
 
   @media (min-width: $screen-tablet) {
-    padding: 0 50px;
+    padding: 0 6.4%;
   }
 }
 
@@ -188,4 +255,19 @@
   padding: 0;
   background-color: $white;
   outline: none;
+
+  @media (min-width: $screen-tablet) {
+    margin-top: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.knitting__footer-wrapper {
+
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    margin-top: 53px;
+    flex-direction: row-reverse;
+  }
 }

@@ -1,8 +1,11 @@
 .type-checkbox {
 
   @media (min-width: $screen-tablet) {
-    outline: $temp-ol;
     width: 50%;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 33.3%;
   }
 }
 
@@ -19,6 +22,42 @@
     border-top-style: none;
     border-right-style: none;
     transform: rotate(-45deg);
+
+    @media (min-width: $screen-tablet) {
+      left: 19px;
+      top: -1px;
+      width: 31px;
+      height: 16px;
+    }
+  }
+
+  &:active ~ .type-checkbox__label--gray::after,
+  &:checked ~ .type-checkbox__label--gray::after,
+  &:active ~ .type-checkbox__label--black::after,
+  &:checked ~ .type-checkbox__label--black::after {
+
+    @media (min-width: $screen-tablet) {
+      left: 27px;
+      top: -1px;
+    }
+  }
+
+  &:active ~ .type-checkbox__label--pink::after,
+  &:checked ~ .type-checkbox__label--pink::after {
+
+    @media (min-width: $screen-tablet) {
+      left: 19px;
+      top: 24px;
+    }
+  }
+
+  &:active ~ .type-checkbox__label--orange::after,
+  &:checked ~ .type-checkbox__label--orange::after {
+
+    @media (min-width: $screen-tablet) {
+      left: 27px;
+      top: 24px;
+    }
   }
 }
 
@@ -33,11 +72,60 @@
 
   @media (min-width: $screen-tablet) {
     margin: 0;
-    height: 33.3%;
-//    padding-left: 87px;
+    padding-left: 87px;
     font-size: $font-size--xxl;
     line-height: 18px / $font-size--xxl;
-//    vertical-align: middle;
+  }
+
+  &--gray,
+  &--black,
+  &--orange {
+
+    @media (min-width: $screen-tablet) {
+      padding-left: 99px;
+    }
+
+    @media (min-width: $screen-desktop) {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  &--gray,
+  &--white {
+
+    @media (min-width: $screen-tablet) {
+      transform: translateY(65px);
+    }
+
+    @media (min-width: $screen-desktop) {
+      transform: translateY(63px);
+    }
+  }
+
+  &--pink,
+  &--orange {
+
+    @media (min-width: $screen-tablet) {
+      padding-top: 25px;
+    }
+
+    @media (min-width: $screen-desktop) {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  &--black,
+  &--tiffany {
+
+    @media (min-width: $screen-tablet) {
+      transform: translateY(45px);
+    }
+
+    @media (min-width: $screen-desktop) {
+    transform: translateY(65px);
+    }
   }
 
   &::before {
@@ -50,7 +138,9 @@
     border: 2px solid $dark-gray;
 
     @media (min-width: $screen-tablet) {
-     top: 0;
+      top: 0;
+      width: 54px;
+      height: 52px;
     }
   }
 
@@ -60,6 +150,36 @@
 
   &:active::before {
     border-color: $gray-5;
+  }
+
+  &--white::before,
+  &--tiffany::before {
+    @media (min-width: $screen-tablet) {
+      top: -15px;
+      left: 6px;
+    }
+  }
+
+  &--gray::before,
+  &--black::before {
+    @media (min-width: $screen-tablet) {
+      top: -15px;
+      left: 15px;
+    }
+  }
+
+  &--pink::before {
+    @media (min-width: $screen-tablet) {
+      top: 11px;
+      left: 6px;
+    }
+  }
+
+  &--orange::before {
+    @media (min-width: $screen-tablet) {
+      top: 11px;
+      left: 15px;
+    }
   }
 }
 
