@@ -3,13 +3,14 @@
 
   @media (min-width: $screen-tablet) {
     margin: 0 auto;
-    padding: 0 50px;
+//    padding: 0 50px;
     padding-bottom: 57px;
     width: $tablet-width;
   }
 
   @media (min-width: $screen-desktop) {
     position: relative;
+    padding: 0 50px;
     width: $desktop-width;
     min-height: 629px;
   }
@@ -25,6 +26,7 @@
   line-height: 30px / $font-size--xl;
 
   @media (min-width: $screen-tablet) {
+    padding: 0 50px;
     padding-top: 59px;
     width: auto;
     font-size: $font-size--xxxxxl;
@@ -47,6 +49,7 @@
   list-style: none;
 
   @media (min-width: $screen-tablet) {
+    padding: 0 50px;
     display: flex;
     width: auto;
   }
@@ -193,6 +196,12 @@
   padding-top: 1px;
   height: 457px;
   width: 320px;
+
+  @media (min-width: $screen-tablet) {
+    margin: 0;
+    width: 768px;
+    height: 457px;
+  }
 
   @media (min-width: $screen-desktop) {
     position: absolute;

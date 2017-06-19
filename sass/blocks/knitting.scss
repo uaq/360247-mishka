@@ -106,10 +106,6 @@
     @media (min-width: $screen-tablet) {
       margin: 0;
       padding-top: 56px;
-      min-height: 218px;
-    }
-
-    @media (min-width: $screen-tablet) {
       min-height: 217px;
     }
 
@@ -310,6 +306,10 @@
   }
 
   @media (min-width: $screen-tablet) {
+
+  }
+
+  @media (min-width: $screen-desktop) {
     margin: 0 auto;
     margin-top: 50px;
     width: $desktop-width;

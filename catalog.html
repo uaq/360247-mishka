@@ -39,7 +39,11 @@
         <div class="catalog__content">
           <article class="catalog-item">
             <a href="">
-              <img class="catalog-item__img" src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Зайчик">
+              <picture>
+                <source media="(min-width: 1050px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 668px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                <img class="catalog-item__img" src="img/photo-1-mobile@1x.jpg" scrset="img/photo-1-mobile@2x.jpg 2x" alt="Зайчик">
+              </picture>
             </a>
             <div class="catalog-item__info-wrapper">
               <a href="">
@@ -56,7 +60,11 @@
           </article>
           <article class="catalog-item">
             <a href="">
-              <img class="catalog-item__img" src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Корзинка">
+              <picture>
+                <source media="(min-width: 1050px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 668px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                <img class="catalog-item__img" src="img/photo-2-mobile@1x.jpg" scrset="img/photo-2-mobile@2x.jpg 2x" alt="Корзинка">
+              </picture>
             </a>
             <div class="catalog-item__info-wrapper">
               <a href="">
@@ -74,7 +82,11 @@
 
           <article class="catalog-item">
             <a href="">
-              <img class="catalog-item__img" src="img/photo-3-mobile@1x.jpg" height="195" alt="Большая корзинка">
+              <picture>
+                <source media="(min-width: 1050px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 668px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                <img class="catalog-item__img" src="img/photo-3-mobile@1x.jpg" scrset="img/photo-3-mobile@2x.jpg 2x" alt="Большая корзинка">
+              </picture>
             </a>
             <div class="catalog-item__info-wrapper">
               <a href="">
@@ -94,7 +106,7 @@
       <section class="making">
         <div class="making__content">
           <h3 class="making__title">Процесс производства</h3>
-          <video class="making__video" width="260" height="150" preload="metadata" poster="img/video-mobile@1x.jpg">
+          <video class="making__video" preload="metadata">
             <source src="???" type="video/mp4">
             <source src="???" type="video/ogg">
             <source src="???" type="video/webm">

@@ -39,13 +39,25 @@
 }
 
 .making__video {
+  background: url("../img/video-mobile@1x.jpg") no-repeat 0;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: url("../img/video-mobile@2x.jpg") no-repeat 0;
+    background-size: 260px auto;
+  }
 
   @media (min-width: $screen-tablet) {
-    outline: $temp-ol;
     position: absolute;
     top: -455px;
     width: 668px;
     height: 455px;
+
+    background: url("../img/video-tablet@1x.jpg") no-repeat center 0;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url("../img/video-tablet@2x.jpg") no-repeat center 0;
+      background-size: 668px auto;
+    }
   }
 
   @media (min-width: $screen-desktop) {
@@ -53,6 +65,13 @@
     top: 0;
     width: 682px;
     height: 455px;
+
+    background: url("../img/video-desktop@1x.jpg") no-repeat center 0;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url("../img/video-desktop@2x.jpg") no-repeat center 0;
+      background-size: 682px auto;
+    }
   }
 }
 
