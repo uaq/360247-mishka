@@ -1,14 +1,44 @@
 .catalog-item {
-  outline: $temp-ol;
   padding: 0 30px;
+  padding-top: 30px;
+  min-height: 404px;
 
   @media (min-width: $screen-tablet) {
     display: flex;
+    margin-top: 54px;
     padding: 0 50px;
+    min-height: 334px;
   }
 
   @media (min-width: $screen-desktop) {
     display: block;
+    padding: 0;
+    margin: 0;
+    margin-top: 105px;
+  }
+}
+
+.catalog-item > a {
+  display: block;
+  height: 195px;
+
+  @media (min-width: $screen-tablet) {
+    height: 334px;
+  }
+}
+
+.catalog-item img {
+  width: 260px;
+  height: 195px;
+
+  @media (min-width: $screen-tablet) {
+    width: 334px;
+    height: 334px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 316px;
+    height: 462px;
   }
 }
 
@@ -18,18 +48,87 @@
 
 .catalog-item__title {
   margin: 0;
+  padding: 0;
   color: $secondary-text;
   font-weight: bold;
   font-size: $font-size--lg;
   line-height: 24px / $font-size--lg;
+
+  @media (min-width: $screen-tablet) {
+    font-size: $font-size--tempName;
+    line-height: 24px / $font-size--tempName;
+  }
+}
+
+.catalog-item__info-wrapper {
+  padding-top: 25px;
+  padding-left: 26px;
+  padding-right: 25px;
+  width: 260px;
+  border: 1px solid $gray-2;
+
+  @media (min-width: $screen-tablet) {
+    width: 334px;
+    min-height: 334px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin-top: 128px;
+    width: 316px;
+    min-height: 197px;
+  }
 }
 
 .catalog-item__info {
+  padding-top: 8px;
   font-size: $font-size--xs;
   line-height: 30px / $font-size--xs;
+
+  @media (min-width: $screen-tablet) {
+    padding-top: 7px;
+    font-size: $font-size--main;
+  }
+
+  @media (min-width: $screen-desktop) {
+    padding-top: 0;
+  }
 }
 
 .catalog-item__price {
   color: $secondary-text;
   font-weight: bold;
+
+  @media (min-width: $screen-tablet) {
+    font-size: $font-size--lg;
+    line-height: 24px / $font-size--lg;
+  }
+}
+
+.catalog-item__bottom {
+  margin-top: 20px;
+  padding-top: 20px;
+  min-height: 71px;
+  border-top: 1px solid $gray-2;
+
+  @media (min-width: $screen-tablet) {
+    margin-top: 172px;
+    padding-left: 2px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin-top: 38px;
+    padding-left: 0;
+  }
+}
+
+.catalog-item:last-child .catalog-item__bottom {
+
+  @media (min-width: $screen-tablet) {
+    margin-top: 148px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin-top: 14px;
+    padding-left: 0;
+  }
 }

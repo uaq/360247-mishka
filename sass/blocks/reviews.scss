@@ -4,16 +4,19 @@
 
   @media (min-width: $screen-tablet) {
     position: relative;
+    margin-top: 64px;
     padding: 0 50px;
     width: $tablet-width;
-//    min-height: 504px;
-    display: flex;
-    flex-wrap: wrap;
+    min-height: 545px;
+//    display: flex;
+//    flex-wrap: wrap;
     background: url("../img/review@1x.jpg") no-repeat 0 100%;
   }
 
   @media (min-width: $screen-desktop) {
+    padding-left: 225px;
     width: $desktop-width;
+    min-height: 560px;
   }
 }
 
@@ -26,24 +29,84 @@
   line-height: 30px / $font-size--xxxl;
 
   @media (min-width: $screen-tablet) {
-    padding-top: 125px;
+    padding-top: 78px;
     width: 70%;
     font-size: $font-size--xxxxxl;
     line-height: 50px / $font-size--xxxxxl;
     order: 1;
   }
+
+  @media (min-width: $screen-desktop) {
+    padding-top: 80px;
+    font-size: $font-size--xxxxxxl;
+    line-height: 57px / $font-size--xxxxxxl;
+  }
+}
+
+.reviews__slider {
+
+  @media (min-width: $screen-tablet) {
+    margin-top: 4px;
+  }
 }
 
 .reviews__write {
+  margin-top: 36px;
   padding: 9px 80px;
 
   @media (min-width: $screen-tablet) {
     position: absolute;
     right: 50px;
-    top: 102px;
+    top: 45px;
     padding: 14px 38px;
     width: 176px;
     font-size: $font-size--lg;
     line-height: 20px / $font-size--lg;
+  }
+
+  @media (min-width: $screen-desktop) {
+    top: 50px;
+  }
+}
+
+.reviews__arrows {
+//  margin: 0;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reviews__prev,
+.reviews__next {
+  padding: 0;
+  margin-top: 19px;
+  width: 130px;
+  font-size: 0;
+  background: #ffffff url("../img/icon-right-arrow.svg") no-repeat 36px 12px;
+  border: 1px solid $gray-2;
+
+  @media (min-width: $screen-tablet) {
+    position: absolute;
+    right: 10px;
+    top: -86px;
+    width: 11%;
+    background-position: 15px 12px;
+    border: none;
+  }
+
+  @media (min-width: $screen-desktop) {
+    right: -12px;
+  }
+}
+
+.reviews__prev {
+  border-right: none;
+  background: url("../img/icon-left-arrow.svg") no-repeat 36px 12px;
+
+  @media (min-width: $screen-tablet) {
+    right: 96px;
+    margin-left: 38px;
+    background-position: 15px 12px;
   }
 }

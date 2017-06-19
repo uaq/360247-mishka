@@ -1,6 +1,9 @@
 .making {
-  outline: $temp-ol;
+  margin: 0 auto;
+  margin-top: 32px;
   padding: 0 30px;
+  width: $mobile-width;
+
 
   @media (min-width: $screen-tablet) {
     margin: 0 auto;
@@ -15,46 +18,128 @@
 }
 
 .making__content {
-  outline: $temp-ol;
+  margin-top: 32px;
+  margin-bottom: 58px;
+  min-height: 503px;
+  border: 1px solid $gray-2;
+
+  @media (min-width: $screen-tablet) {
+    margin-top: 54px;
+    position: relative;
+    margin-bottom: 62px;
+    min-height: 289px;
+    border-top: none;
+  }
 
   @media (min-width: $screen-desktop) {
     position: relative;
+    min-height: 455px;
+    margin-bottom: 106px;
   }
 }
 
 .making__video {
 
+  @media (min-width: $screen-tablet) {
+    outline: $temp-ol;
+    position: absolute;
+    top: -455px;
+    width: 668px;
+    height: 455px;
+  }
+
   @media (min-width: $screen-desktop) {
     position: absolute;
     top: 0;
+    width: 682px;
+    height: 455px;
   }
 }
 
 .making__title {
   margin: 0;
+  padding-top: 24px;
+  padding-left: 90px;
+  min-height: 95px;
   color: $secondary-text;
   font-weight: bold;
   font-size: $font-size--lg;
   line-height: 24px / $font-size--lg;
 
+  @media (min-width: $screen-tablet) {
+    margin-top: 509px;
+    padding-top: 39px;
+    padding-left: 105px;
+    font-size: $font-size--tempName;
+    line-height: 24px / $font-size--tempName;
+    border-top: 1px solid $gray-2;
+  }
+
   @media (min-width: $screen-desktop) {
-    padding-top: 70px;
-    padding-left: 680px;
+    margin: 0;
+    padding-top: 99px;
+    padding-left: 757px;
+    padding-right: 55px;
   }
 }
 
 .making__info {
+  padding-top: 12px;
+  padding-left: 33px;
+  padding-right: 33px;
   font-size: $font-size--xs;
+  line-height: 24px / $font-size--xs;
+
+  @media (min-width: $screen-tablet) {
+    margin: 0;
+    padding: 0;
+    padding-right: 45px;
+    padding-left: 39px;
+
+    font-size: $font-size--main;
+    line-height: 30px / $font-size--main;
+  }
 
   @media (min-width: $screen-desktop) {
-    padding-left: 680px;
+    padding-left: 757px;
+    padding-top: 31px;
   }
 }
 
 .making__order {
+  margin-left: 33px;
+  margin-bottom: 33px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 192px;
+
+  @media (min-width: $screen-tablet) {
+    margin: 0 41px;
+    margin-top: 35px;
+    width: 583px;
+    padding-top: 15px;
+    padding-left: 218px;
+    font-size: $font-size--lg;
+    line-height: 16px / $font-size--lg;
+  }
 
   @media (min-width: $screen-desktop) {
-    padding-left: 680px;
+    padding: 0 40px;
+    margin-left: 0;
+    margin-top: 45px;
+    padding: 0 41px;
+    padding-top: 15px;
+    width: 230px;
+  }
+}
+
+.modal__oder-wrapper {
+
+  @media (min-width: $screen-tablet) {
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin-left: 760px;
   }
 }
 

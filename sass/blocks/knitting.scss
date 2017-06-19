@@ -10,6 +10,10 @@
   }
 }
 
+.knitting__additionall {
+  min-height: 195px;
+}
+
 .knitting__header-wrapper {
   background: $gray;
 }
@@ -34,9 +38,10 @@
   }
 
   @media (min-width: $screen-desktop) {
+    padding: 0;
     padding-top: 94px;
-    padding-left: 14%;
-    width: 800px;
+    padding-left: 334px;
+    width: $desktop-width;
     font-size: $font-size--xxxxxxl;
     line-height: 57px / $font-size--xxxxxxl;
   }
@@ -57,9 +62,12 @@
   }
 
   @media (min-width: $screen-desktop) {
-    padding-left: 19.5%;
-    padding-top: 134px;
+    padding: 0 139px;
+    padding-top: 116px;
+    margin: 0 auto;
+    margin-top: 35px;
     width: 980px;
+    min-height: 193px;
   }
 }
 
@@ -73,7 +81,7 @@
   position: relative;
   margin: 0;
   display: block;
-  margin-top: 22px;
+  margin-top: 25px;
   color: $legend-text;
   font-weight: bold;
   font-size: $font-size--lg;
@@ -84,7 +92,7 @@
     width: 24%;
 
   @media (min-width: $screen-desktop) {
-    outline: $temp-ol;
+    padding-left: 36px;
     width: 14%;
   }
 
@@ -104,10 +112,14 @@
     @media (min-width: $screen-tablet) {
       min-height: 217px;
     }
+
+    @media (min-width: $screen-desktop) {
+
+    }
   }
 
   &--color {
-    margin-top: 20px;
+    margin-top: 23px;
 
     @media (min-width: $screen-tablet) {
       margin: 0;
@@ -151,6 +163,7 @@
   }
 
   &--add {
+    margin-top: 22px;
 
     @media (min-width: $screen-tablet) {
       margin: 0;
@@ -201,6 +214,11 @@
     padding-right: 5.8%;
     display: flex;
   }
+
+  @media (min-width: $screen-desktop) {
+    max-width: $desktop-width;
+    margin: 0 auto;
+  }
 }
 
 .knitting__color-wrapper,
@@ -230,6 +248,11 @@
     width: 57%;
     transform: translateY(-7px);
   }
+
+  @media (min-width: $screen-desktop) {
+    width: 55.5%;
+    transform: translateY(-10px);
+  }
 }
 
 .knitting__submit-wrapper {
@@ -237,6 +260,12 @@
 
   @media (min-width: $screen-tablet) {
     width: 43%;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: auto;
+    min-height: 99px;
+    transform: translateY(-4px);
   }
 }
 
@@ -247,11 +276,14 @@
   @media (min-width: $screen-tablet) {
     padding: 0 6.4%;
   }
+
+  @media (min-width: $screen-desktop) {
+  }
 }
 
 .knitting__submit {
   font-size: $font-size--lg;
-  margin-top: 27px;
+  margin-top: 24px;
   padding: 0;
   background-color: $white;
   outline: none;
@@ -261,6 +293,12 @@
     padding: 0;
     width: 100%;
   }
+
+  @media (min-width: $screen-desktop) {
+    width: 100%;
+    padding: 0 30px;
+    transform: translateX(16px);
+  }
 }
 
 .knitting__footer-wrapper {
@@ -269,5 +307,11 @@
     display: flex;
     margin-top: 53px;
     flex-direction: row-reverse;
+  }
+
+  @media (min-width: $screen-tablet) {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: $desktop-width;
   }
 }

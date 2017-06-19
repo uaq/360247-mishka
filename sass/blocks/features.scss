@@ -23,12 +23,13 @@
   line-height: 30px / $font-size--xxxl;
 
   @media (min-width: $screen-tablet) {
-    padding-top: 118px;
+    padding-top: 46px;
     font-size: $font-size--xxxxxl;
     line-height: 50px / $font-size--xxxxxl;
   }
 
   @media (min-width: $screen-desktop) {
+    padding-top: 54px;
     font-size: $font-size--xxxxxxl;
     line-height: 57px / $font-size--xxxxxxl;
 

@@ -19,6 +19,7 @@
   line-height: 24px / $font-size--xxl;
 
   @media (min-width: $screen-tablet) {
+    min-height: 120px;
     width: 50%;
   }
 
