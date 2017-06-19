@@ -259,7 +259,7 @@
     font-size: $font-size--main;
   }
 
-   @media (min-width: $screen-desktop) {
+  @media (min-width: $screen-desktop) {
     font-size: $font-size--lg;
     line-height: 24px / $font-size--lg;
   }
@@ -272,7 +272,7 @@
     font-size: $font-size--main;
   }
 
-   @media (min-width: $screen-desktop) {
+  @media (min-width: $screen-desktop) {
     font-size: $font-size--lg;
     line-height: 24px / $font-size--lg;
   }
