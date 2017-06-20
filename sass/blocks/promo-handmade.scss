@@ -1,9 +1,19 @@
 .promo-handmade {
-  width: auto;
-  min-width: 320px;
+  background: $gray-4;
 
   @media (min-width: $screen-tablet) {
-    margin-top: -88px;
+  }
+
+  @media (min-width: $screen-desktop) {
+  }
+}
+
+.promo-handmade__inner-wrapper {
+  width: auto;
+  min-width: 320px;
+  background: $gray-4;
+
+  @media (min-width: $screen-tablet) {
     margin-left: auto;
     margin-right: auto;
     padding: 0 50px;
@@ -19,8 +29,19 @@
   min-height: 282px;
   background: url("../img/hero-mobile@1x.jpg") no-repeat center -18px;
 
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: url("../img/hero-mobile@2x.jpg") no-repeat center -18px;
+    background-size: 575px auto;
+  }
+
   @media (min-width: $screen-tablet) {
     min-height: 625px;
+    background: url("../img/hero-desktop@1x.jpg") no-repeat center 0;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url("../img/hero-desktop@2x.jpg") no-repeat center 0;
+      background-size: 1150px auto;
+    }
   }
 }
 
@@ -36,5 +57,11 @@
     width: 500px;
     font-size: $font-size--xxxxxl;
     line-height: 50px / $font-size--xxxxxl;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 700px;
+    font-size: $font-size--xxxxxxl;
+    line-height: 57px / $font-size--xxxxxxl;
   }
 }

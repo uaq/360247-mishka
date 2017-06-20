@@ -1,8 +1,8 @@
 .quote {
   margin: 0;
   padding-bottom: 13px;
-  display: flex;
-  flex-wrap: wrap;
+//  display: flex;
+//  flex-wrap: wrap;
 
   @media (min-width: $screen-tablet) {
     order: 2;
@@ -21,10 +21,29 @@
     font-size: $font-size--lg;
     line-height: 30px / $font-size--lg;
   }
+
+  @media (min-width: $screen-desktop) {
+    padding-top: 45px;
+    width: 88%;
+  }
+}
+
+.quote__footer {
+  margin-top: 28px;
+
+  @media (min-width: $screen-tablet) {
+    position: relative;
+    margin-top: 55px;
+    width: 44.5%;
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin-top: 38px;
+  }
 }
 
 .quote__author {
-  padding-top: 26px;
+  padding-top: 25px;
   width: 100%;
   color: $secondary-text;
   font-weight: bold;
@@ -34,15 +53,17 @@
 
   @media (min-width: $screen-tablet) {
     padding-top: 59px;
-    width: 65%;
     font-size: $font-size--xl;
     line-height: 24px / $font-size--xl;
+  }
+
+  @media (min-width: $screen-desktop) {
+    font-size: $font-size--lg;
+    line-height: 24px / $font-size--lg;
   }
 }
 
 .quote__email {
-  padding-top: 3px;
-  padding-bottom: 4px;
   width: 100%;
   color: $dark-gray;
   text-decoration: none;
@@ -50,36 +71,7 @@
   line-height: 30px / $font-size--lg;
 
   @media (min-width: $screen-tablet) {
-    padding-bottom: 33px;
-    width: 65%;
-  }
-}
-
-.quote__prev,
-.quote__next {
-  padding: 0;
-  width: 130px;
-  font-size: 0;
-  background: #ffffff url("../img/icon-right-arrow.svg") no-repeat 36px 12px;
-  border: 1px solid $gray-2;
-
-  @media (min-width: $screen-tablet) {
-    position: absolute;
-    right: 49px;
-    top: 75.5%;
-    width: 11%;
-    background-position: 15px 12px;
-    border: none;
-  }
-}
-
-.quote__prev {
-  border-right: none;
-  background: url("../img/icon-left-arrow.svg") no-repeat 36px 12px;
-
-  @media (min-width: $screen-tablet) {
-    right: 136px;
-    margin-left: 38px;
-    background-position: 15px 12px;
+    display: block;
+    margin-top: 4px;
   }
 }

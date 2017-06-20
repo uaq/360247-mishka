@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
+    <script>
+//     Picture element HTML5 shiv
+    document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body class="page">
     <header class="page-header">
@@ -29,61 +34,53 @@
     </header>
     <main class="main-index">
       <section class="promo-handmade">
-        <header class="promo-handmade__header">
-          <h2 class="promo-handmade__title">Милые штуки ручной<br> работы для дома</h2>
-        </header>
-        <nav class="handmade-nav">
-          <div class="handmade-nav__links">
-            <a class="handmade-nav__item handmade-nav__item--interior" href=""><span>Предметы интерьера</span></a>
-            <a class="handmade-nav__item handmade-nav__item--toy" href=""><span>Детские игрушки</span></a>
-          </div>
-        </nav>
+        <div class="promo-handmade__inner-wrapper">
+          <header class="promo-handmade__header">
+            <h2 class="promo-handmade__title">Милые штуки ручной<br> работы для дома</h2>
+          </header>
+          <nav class="handmade-nav">
+            <div class="handmade-nav__links">
+              <a class="handmade-nav__item handmade-nav__item--interior" href=""><span>Предметы интерьера</span></a>
+              <a class="handmade-nav__item handmade-nav__item--toy" href=""><span>Детские игрушки</span></a>
+            </div>
+          </nav>
+        </div>
       </section>
       <section class="promo-week">
         <div class="item-ot-week">
-          <h2 class="item-ot-week__title">Вязаные корзинки</h2>
-          <div class="item-ot-week__subtitle">Товар недели</div>
-          <div class="item-ot-week__text">
-            <p class="item-ot-week__info">Экологически чистая пряжа,<br> ручная работа. Доступны в шести<br> расцветках, и трех размерах.</p>
-            <ul class="item-ot-week__list">
-              <li class="item-ot-week__list-item">
-                <span class="item-ot-week__list-parameter">Цвет:</span>
-                <span class="item-ot-week__list-value">«Тиффани»/серый</span>
-              </li>
-              <li class="item-ot-week__list-item">
-                <span class="item-ot-week__list-parameter">Диаметр:</span>
-                <span class="item-ot-week__list-value">25 см</span>
-              </li>
-              <li class="item-ot-week__list-item">
-                <span class="item-ot-week__list-parameter">Высота:</span>
-                <span class="item-ot-week__list-value">15 см</span>
-              </li>
-            </ul>
-          </div>
-          <div class="item-ot-week__img">
-            <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
-          </div>
-          <div class="item-ot-week__price">Цена: 990 руб.</div>
-          <a class="item-ot-week__order btn" href="">Заказать</a>
-        </div>
-        <form class="modal-order" action="https://echo.htmlacademy.ru" method="get">
-          <h2 class="modal-order__title">Добавить в корзину</h2>
-          <fieldset class="modal-order__item">
-            <legend>Выберите размер:</legend>
-            <label class="size-label">S
-              <input type="radio" name="size" id="S" value="S">
-            </label>
-            <label class="size-label">M
-              <input type="radio" name="size" id="M" value="M">
-            </label>
-            <label class="size-label">L
-              <input type="radio" name="size" id="L" value="L">
-            </label>
-            <div class="modal-order__btn btn">
-              <button type="submit" name="size-btn" id="size-btn" value="odered">Добавить</button>
+          <header class="item-ot-week__header">
+            <h2 class="item-ot-week__title">Вязаные корзинки</h2>
+            <div class="item-ot-week__subtitle">Товар недели</div>
+          </header>
+          <div class="item-ot-week__content">
+            <div class="item-ot-week__text">
+              <p class="item-ot-week__info">Экологически чистая пряжа,<br> ручная работа. Доступны в шести<br> расцветках, и трех размерах.</p>
+              <ul class="item-ot-week__list">
+                <li class="item-ot-week__list-item">
+                  <span class="item-ot-week__list-parameter">Цвет:</span>
+                  <span class="item-ot-week__list-value">«Тиффани»/серый</span>
+                </li>
+                <li class="item-ot-week__list-item">
+                  <span class="item-ot-week__list-parameter">Диаметр:</span>
+                  <span class="item-ot-week__list-value">25 см</span>
+                </li>
+                <li class="item-ot-week__list-item">
+                  <span class="item-ot-week__list-parameter">Высота:</span>
+                  <span class="item-ot-week__list-value">15 см</span>
+                </li>
+              </ul>
             </div>
-          </fieldset>
-        </form>
+            <div class="item-ot-week__img">
+              <picture>
+                <source media="(min-width: 1050px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+                <source media="(min-width: 668px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+                <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+              </picture>
+            </div>
+            <div class="item-ot-week__price">Цена: 990 руб.</div>
+            <a class="item-ot-week__order btn" href="">Заказать</a>
+          </div>
+        </div>
       </section>
       <section class="features">
         <h2 class="features__title">Коротко о нас:</h2>
@@ -98,13 +95,21 @@
       </section>
       <section class="reviews">
         <h2 class="reviews__title">Отзывы</h2>
-        <blockquote class="quote">
-          <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-          <cite class="quote__author">Анастасия Красильникова</cite>
-          <a class="quote__email" href="">@misssssiskras</a>
-          <button class="quote__prev btn" type="button">Предыдущий отзыв</button>
-          <button class="quote__next btn" type="button">Следующий отзыв</button>
-        </blockquote>
+        <div class="reviews__slider">
+          <div class="slider__inner-wrapper">
+            <blockquote class="quote">
+              <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек   в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              <footer class="quote__footer">
+                <cite class="quote__author">Анастасия Красильникова</cite>
+                <a class="quote__email" href="">@misssssiskras</a>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="reviews__arrows">
+            <button class="reviews__prev btn" type="button">Предыдущий отзыв</button>
+            <button class="reviews__next btn" type="button">Следующий отзыв</button>
+          </div>
+        </div>
         <a class="reviews__write btn" href="">Написать</a>
       </section>
       <section class="contacts">
@@ -120,7 +125,11 @@
           </li>
         </ul>
         <div class="contacts__map">
-          <img src="img/map-mobile@1x.jpg" width="320" height="457" alt="Карта">
+          <picture>
+            <source media="(min-width: 1050px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 668px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта">
+          </picture>
         </div>
         <div class="contacts__write-wrapper">
           <a class="contacts__write btn" href="">Напишите нам</a>
@@ -128,24 +137,44 @@
       </section>
     </main>
     <footer class="page-footer">
-      <picture class="page-footer__logo">
-        <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop(t).png">
-        <source media="(min-width: 575px)" srcset="img/mishka-logo-tablet(t).png">
-        <img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
-      </picture>
-      <div class="social">
-        <a class="social__item social__item--insta" href="">Мы в Вконтакте</a>
-        <a class="social__item social__item--fb" href="">Мы в Фейсбук</a>
-        <a class="social__item social__item--tw" href="">Мы в Твиттер</a>
-      </div>
-      <div class="page-footer__bottom">
-        <p class="page-footer__copyright">Разработано
-          <a class="page-footer__academy" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-            <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
-          </a>
-        </p>
+      <div class="page-footer__inner-wrapper">
+        <picture class="page-footer__logo">
+          <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop(t).png">
+          <source media="(min-width: 668px)" srcset="img/mishka-logo-tablet(t).png">
+          <img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
+        </picture>
+        <div class="social">
+          <a class="social__item social__item--insta" href="">Мы в Вконтакте</a>
+          <a class="social__item social__item--fb" href="">Мы в Фейсбук</a>
+          <a class="social__item social__item--tw" href="">Мы в Твиттер</a>
+        </div>
+        <div class="page-footer__bottom">
+          <p class="page-footer__copyright">Разработано
+            <a class="page-footer__academy" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+              <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
+    <form class="modal-order" action="https://echo.htmlacademy.ru" method="get">
+      <h2 class="modal-order__title">Добавить в корзину</h2>
+        <fieldset class="modal-order__item">
+          <legend>Выберите размер:</legend>
+          <label class="size-label">S
+            <input type="radio" name="size" id="S" value="S">
+          </label>
+          <label class="size-label">M
+            <input type="radio" name="size" id="M" value="M">
+          </label>
+          <label class="size-label">L
+            <input type="radio" name="size" id="L" value="L">
+          </label>
+          <div class="modal-order__btn btn">
+            <button type="submit" name="size-btn" id="size-btn" value="odered">Добавить</button>
+          </div>
+        </fieldset>
+      </form>
     <script src="js/main-nav.js"></script>
   </body>
 </html>

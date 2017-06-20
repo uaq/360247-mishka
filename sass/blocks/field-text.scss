@@ -1,26 +1,153 @@
 .field-text {
+  margin-top: 25px;
+  min-height: 67px;
 
+  @media (min-width: $screen-tablet) {
+    margin: 0;
+    display: flex;
+  }
+
+  &--name {
+
+    @media (min-width: $screen-tablet) {
+      transform: translateY(65px);
+    }
+  }
+
+  &--lastname {
+
+    @media (min-width: $screen-tablet) {
+      transform: translateY(74px);
+    }
+  }
+
+  &--patron {
+
+    @media (min-width: $screen-tablet) {
+      transform: translateY(83px);
+    }
+  }
+
+
+  &--tel,
+  &--email {
+    margin: 0;
+    transform: translateY(5px);
+
+    @media (min-width: $screen-tablet) {
+      transform: translateY(27px);
+    }
+  }
+
+  &--tel {
+
+    @media (min-width: $screen-tablet) {
+      transform: translateY(65px);
+    }
+  }
 }
 
 .field-text__label {
+  display: block;
   @include title-label;
 
-  &--hidden {
-    font-size: 0;
+  @media (min-width: $screen-tablet) {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 7px;
+    padding-right: 19px;
+    font-size: $font-size--xxl;
+    line-height: 18px / $font-size--xxl;
   }
 }
 
 .field-text textarea {
   font-family: "OpenSans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  padding-top: 14px;
+  padding-left: 15px;
+  width: 100%;
+  outline: none;
+  border: 2px solid $dark-gray;
+  height: 142px;
+
+  @media (min-width: $screen-tablet) {
+    margin-top: 50px;
+    margin-left: 7px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 92.5%;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $light-green-2;
+  }
 }
 
 .field-text input,
 .field-text textarea {
   font-size: $font-size--lg;
   line-height: 18px / $font-size--lg;
+
+  @media ("min-width: $screen-tablet") {
+    font-size: $font-size--xxl;
+    line-height: 18px / $font-size--xxl;
+  }
+}
+
+.field-text input {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 47px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid $black;
+  background-color: transparent;
+  transform: translateY(6px);
+
+  @media (min-width: $screen-tablet) {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 7px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    width: 100%;
+    transform: translateY(-8px);
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 76%;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $light-green-2;
+  }
 }
 
 .field-text input::placeholder,
 .field-text textarea::placeholder {
   color: $main-text;
+}
+
+.field-text--name input {
+
+  @media (min-width: $screen-tablet) {
+    width: 83%;
+  }
+}
+
+.field-text--tel input,
+.field-text--email input {
+
+  @media (min-width: $screen-tablet) {
+    width: 100%;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 93%;
+  }
 }

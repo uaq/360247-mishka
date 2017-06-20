@@ -3,17 +3,36 @@
   width: 260px;
 
   @media (min-width: $screen-tablet) {
-    outline: $temp-ol;
     position: relative;
     width: $tablet-width;
-    margin: 0 auto;
     padding: 0 50px;
-    display: flex;
-    flex-wrap: wrap;
   }
 
   @media (min-width: $screen-desktop) {
     width: $desktop-width;
+    min-height: 810px;
+  }
+}
+
+.item-ot-week__content {
+
+  @media (min-width: $screen-tablet) {
+    margin-top: 51px;
+    width: 290px;
+    min-height: 485px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin-left: 175px;
+    min-height: 550px;
+  }
+}
+
+.item-ot-week__header {
+
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -26,15 +45,17 @@
   line-height: 30px / $font-size--xxxl;
 
   @media (min-width: $screen-tablet) {
-    width: 81%;
+    padding-top: 45px;
     min-height: 70px;
-    order: 1;
+    font-size: $font-size--xxxxxl;
+    line-height: 50px / $font-size--xxxxxl;
   }
 
   @media (min-width: $screen-desktop) {
-    position: absolute;
-    right: -500px;
-    left: 400px;
+    padding-left: 172px;
+    padding-top: 125px;
+    font-size: $font-size--xxxxxxl;
+    line-height: 57px / $font-size--xxxxxxl;
   }
 }
 
@@ -47,29 +68,27 @@
   text-transform: uppercase;
 
   @media (min-width: $screen-tablet) {
-    width: 19%;
-    min-height: 70px;
-    order: 2;
+    margin-right: 28px;
+    padding-top: 52px;
+    width: 70px;
+    text-align: center;
+    line-height: 17px / $font-size--lg;
   }
 
   @media (min-width: $screen-desktop) {
     position: absolute;
+    top: 80px;
+    left: 97px;
   }
 }
 
 .item-ot-week__text {
 
   @media (min-width: $screen-tablet) {
-    order: 3;
-    width: 50%;
-    min-height: 240px;
-    order: 3;
+    min-height: 245px;
   }
 
   @media (min-width: $screen-desktop) {
-    width: 350px;
-    min-height: 410px;
-    margin-left: 175px;
   }
 }
 
@@ -77,12 +96,11 @@
   margin-top: 24px;
 
   @media (min-width: $screen-tablet) {
-    margin: 0;
-    min-height: 50%;
+    font-size: $font-size--lg;
+    line-height: 30px / $font-size--lg;
   }
 
   @media (min-width: $screen-desktop) {
-    padding-top: 20%;
   }
 }
 
@@ -94,7 +112,11 @@
   line-height: 20px / $font-size--main;
 
   @media (min-width: $screen-tablet) {
-    min-height: 50%;
+    margin-top: 35px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin-top: 45px;
   }
 }
 
@@ -127,16 +149,16 @@
 
   @media (min-width: $screen-tablet) {
     position: absolute;
-    right: 0;
-    top: 70px;
-    outline: $temp-ol;
-    width: 50%;
-    height: 400px;
+    right: 50px;
+    top: 125px;
+    width: 333px;
+    height: 404px;
   }
 
   @media (min-width: $screen-desktop) {
-    height: 570px;
-    top: 0;
+    top: 43px;
+    width: 525px;
+    height: 636px;
     z-index: -1;
   }
 }
@@ -148,14 +170,15 @@
   font-size: $font-size--lg;
 
   @media (min-width: $screen-tablet) {
-    width: 51%;
-    min-height: 110px;
-    order: 4;
+    margin: 0;
+    padding-top: 40px;
+    padding-left: 71px;
+    font-size: $font-size--tempName;
+    line-height: 24px / $font-size--tempName;
   }
 
   @media (min-width: $screen-desktop) {
-    margin-left: 175px;
-    outline: $temp-ol;
+    margin-top: 70px;
   }
 }
 
@@ -163,14 +186,14 @@
   font-size: $font-size--lg;
 
   @media (min-width: $screen-tablet) {
-    outline: $temp-ol;
-    width: 50%;
+    margin-top: 35px;
+    padding: 9px 97px;
+//    margin: 0;
+//    padding: 0;
+    width: 100%;
     min-height: 51px;
-    order: 5;
   }
 
   @media (min-width: $screen-desktop) {
-    margin-left: 175px;
-    width: 350px;
   }
 }

@@ -3,15 +3,16 @@
 
   @media (min-width: $screen-tablet) {
     margin: 0 auto;
-    padding: 0 50px;
+//    padding: 0 50px;
     padding-bottom: 57px;
     width: $tablet-width;
   }
 
   @media (min-width: $screen-desktop) {
     position: relative;
+    padding: 0 50px;
     width: $desktop-width;
-    min-height: 610px;
+    min-height: 629px;
   }
 }
 
@@ -25,7 +26,8 @@
   line-height: 30px / $font-size--xl;
 
   @media (min-width: $screen-tablet) {
-    padding-top: 146px;
+    padding: 0 50px;
+    padding-top: 59px;
     width: auto;
     font-size: $font-size--xxxxxl;
     line-height: 50px / $font-size--xxxxxl;
@@ -33,6 +35,10 @@
 
   @media (min-width: $screen-desktop) {
     padding: 0;
+    padding-left: 175px;
+    padding-top: 137px;
+    font-size: $font-size--xxxxxxl;
+    line-height: 57px / $font-size--xxxxxxl;
   }
 }
 
@@ -43,11 +49,16 @@
   list-style: none;
 
   @media (min-width: $screen-tablet) {
+    padding: 0 50px;
     display: flex;
     width: auto;
   }
 
   @media (min-width: $screen-desktop) {
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+    margin-left: 175px;
     display: block;
     width: 525px;
   }
@@ -66,6 +77,7 @@
   }
 
   @media (min-width: $screen-desktop) {
+    padding: 0;
     display: list-item;
   }
 }
@@ -91,6 +103,17 @@
       background: url("../img/icon-flag.svg") no-repeat 5px 3px;
     }
   }
+
+  @media (min-width: $screen-desktop) {
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
+
+    &::before {
+      left: -117px;
+      top: -178px;
+    }
+  }
 }
 
 .contacts__address {
@@ -98,6 +121,11 @@
 
   @media (min-width: $screen-tablet) {
     width: 75px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    display: inline-block;
+    vertical-align: top;
   }
 }
 
@@ -107,6 +135,13 @@
 
   @media (min-width: $screen-tablet) {
     padding: 0;
+  }
+
+  @media (min-width: $screen-desktop) {
+    display: inline-block;
+    vertical-align: top;
+    transform: translateX(-3px);
+//    margin-left: 20px;
   }
 }
 
@@ -148,6 +183,12 @@
     font-size: $font-size--lg;
     line-height: 20px / $font-size--lg;
   }
+
+  @media (min-width: $screen-desktop) {
+    margin: 0;
+    margin-top: 78px;
+    margin-left: 175px;
+  }
 }
 
 .contacts__map {
@@ -156,9 +197,17 @@
   height: 457px;
   width: 320px;
 
+  @media (min-width: $screen-tablet) {
+    margin: 0;
+    width: 768px;
+    height: 457px;
+  }
+
   @media (min-width: $screen-desktop) {
     position: absolute;
-    top: 0;
+    top: 66px;
     right: 50px;
+    width: 525px;
+    height: 457px;
   }
 }
