@@ -16,7 +16,7 @@
 
 .features__title {
   margin: 0;
-  padding-top: 69px;
+  padding-top: 3px;
   color: $secondary-text;
   font-weight: bold;
   font-size: $font-size--xxxl;
@@ -29,7 +29,7 @@
   }
 
   @media (min-width: $screen-desktop) {
-    padding-top: 54px;
+    padding-top: 34px;
     font-size: $font-size--xxxxxxl;
     line-height: 57px / $font-size--xxxxxxl;
 

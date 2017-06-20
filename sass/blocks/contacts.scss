@@ -1,18 +1,32 @@
 .contacts {
   padding-bottom: 39px;
+  background: url("../img/bg-zigzag-line.svg") repeat-x 0 5%;
+  background-size: 320px auto;
+
+  @media (min-width: $screen-tablet) {
+    background-size: 768px auto;
+    background-position: 0 0;
+  }
+
+  @media (min-width: $screen-desktop) {
+    background-size: 1150px auto;
+    background-position: 0 0;
+  }
+}
+
+.contacts__inner-wrapper {
 
   @media (min-width: $screen-tablet) {
     margin: 0 auto;
-//    padding: 0 50px;
-    padding-bottom: 57px;
     width: $tablet-width;
+    min-height: 905px;
   }
 
   @media (min-width: $screen-desktop) {
     position: relative;
     padding: 0 50px;
     width: $desktop-width;
-    min-height: 629px;
+    min-height: 619px;
   }
 }
 
@@ -27,7 +41,7 @@
 
   @media (min-width: $screen-tablet) {
     padding: 0 50px;
-    padding-top: 59px;
+    padding-top: 79px;
     width: auto;
     font-size: $font-size--xxxxxl;
     line-height: 50px / $font-size--xxxxxl;
@@ -36,7 +50,7 @@
   @media (min-width: $screen-desktop) {
     padding: 0;
     padding-left: 175px;
-    padding-top: 137px;
+    padding-top: 167px;
     font-size: $font-size--xxxxxxl;
     line-height: 57px / $font-size--xxxxxxl;
   }
@@ -205,7 +219,7 @@
 
   @media (min-width: $screen-desktop) {
     position: absolute;
-    top: 66px;
+    top: 96px;
     right: 50px;
     width: 525px;
     height: 457px;
