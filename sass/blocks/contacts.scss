@@ -206,10 +206,29 @@
 }
 
 .contacts__map {
+  position: relative;
   margin: 0 auto;
   padding-top: 1px;
   height: 457px;
   width: 320px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 67px;
+    height: 100px;
+    background: url("../img/icon-map-pin.svg");
+    top: 165px;
+    left: 123px;
+
+    @media (min-width: $screen-tablet) {
+      left: 348px;
+    }
+
+    @media (min-width: $screen-desktop) {
+      left: 235px;
+    }
+  }
 
   @media (min-width: $screen-tablet) {
     margin: 0;
