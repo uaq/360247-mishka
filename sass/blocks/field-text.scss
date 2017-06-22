@@ -31,6 +31,7 @@
 
   &--tel,
   &--email {
+    position: relative;
     margin: 0;
     transform: translateY(5px);
 
@@ -45,6 +46,31 @@
       transform: translateY(65px);
     }
   }
+}
+
+.field-text--tel svg,
+.field-text--email svg {
+  position: absolute;
+  right: 5px;
+  top: 12px;
+  opacity: 0.3;
+
+  @media (min-width: $screen-tablet) {
+  top: -4px;
+  right: 20px;
+  }
+
+  @media (min-width: $screen-tablet) {
+    right: 50px;
+  }
+}
+
+.field-text--tel input:hover ~ svg,
+.field-text--tel input:focus ~ svg,
+.field-text--email input:hover ~ svg,
+.field-text--email input:focus ~ svg {
+  fill: $light-green-2;
+  opacity: 1;
 }
 
 .field-text__label {
@@ -71,7 +97,7 @@
   height: 142px;
 
   @media (min-width: $screen-tablet) {
-    margin-top: 50px;
+    margin-top: 49px;
     margin-left: 7px;
   }
 

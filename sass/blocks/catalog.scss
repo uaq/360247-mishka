@@ -12,6 +12,16 @@
 .catalog__header-wrapper {
   border-top: 1px solid gray-2;
   background: $gray;
+
+  @media (min-width: $screen-tablet) {
+    background: $gray url("../img/bg-zigzag-fill.svg") repeat-x 0 105%;
+    background-size: 768px auto;
+  }
+
+  @media (min-width: $screen-desktop) {
+    background-size: 1150px auto;
+    background-position: 0 106%;
+  }
 }
 
 .catalog__title {
@@ -19,8 +29,7 @@
   padding: 0 40px;
   padding-top: 70px;
   width: $mobile-width;
-  min-height: 177px;
-  background: $gray;
+  min-height: 176px;
   @include title-h2;
 
   @media (min-width: $screen-tablet) {

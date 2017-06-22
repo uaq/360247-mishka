@@ -7,9 +7,7 @@
     margin-top: 64px;
     padding: 0 50px;
     width: $tablet-width;
-    min-height: 545px;
-//    display: flex;
-//    flex-wrap: wrap;
+    min-height: 525px;
     background: url("../img/review@1x.jpg") no-repeat 0 0;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -21,7 +19,7 @@
   @media (min-width: $screen-desktop) {
     padding-left: 225px;
     width: $desktop-width;
-    min-height: 560px;
+    min-height: 530px;
     background-position: 49px 10px;
   }
 }
@@ -83,14 +81,23 @@
   flex-wrap: wrap;
 }
 
-.reviews__prev,
-.reviews__next {
+
+
+.reviews__arrow {
   padding: 0;
   margin-top: 19px;
   width: 130px;
   font-size: 0;
   background: #ffffff url("../img/icon-right-arrow.svg") no-repeat 36px 12px;
   border: 1px solid $gray-2;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $screen-tablet) {
     position: absolute;
@@ -112,11 +119,12 @@
 
   @media (min-width: $screen-tablet) {
     right: 96px;
-    margin-left: 38px;
+//    margin-left: 38px;
     background-position: 15px 12px;
   }
 
   @media (min-width: $screen-desktop) {
-    right: 76px;
+    right: 90px;
+    background-position: 30px 12px;
   }
 }

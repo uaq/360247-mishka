@@ -16,6 +16,18 @@
 
 .knitting__header-wrapper {
   background: $gray;
+
+  @media (min-width: $screen-tablet) {
+    min-height: 226px;
+    background: $gray url("../img/bg-zigzag-fill.svg") repeat-x 0 105%;
+    background-size: 768px auto;
+  }
+
+  @media (min-width: $screen-desktop) {
+    min-height: 256px;
+    background-size: 1150px auto;
+    background-position: 0 106%;
+  }
 }
 
 .knitting__title {
@@ -32,7 +44,7 @@
     padding-top: 92px;
     padding-right: 6.5%;
     width: $tablet-width;
-    min-height: 225px;
+//    min-height: 225px;
     font-size: $font-size--xxxxxl;
     line-height: 50px / $font-size--xxxxxl;
   }
@@ -57,17 +69,18 @@
   @media (min-width: $screen-tablet) {
     padding: 0 6.5%;
     padding-top: 55px;
+    min-height: 114px;
     font-size: $font-size--lg;
     line-height: 30px / $font-size--lg;
   }
 
   @media (min-width: $screen-desktop) {
     padding: 0 139px;
-    padding-top: 116px;
+    padding-top: 86px;
     margin: 0 auto;
     margin-top: 35px;
     width: 980px;
-    min-height: 193px;
+    min-height: 161px;
   }
 }
 
@@ -242,7 +255,7 @@
 
   @media (min-width: $screen-tablet) {
     width: 57%;
-    transform: translateY(-7px);
+    transform: translateY(-9px);
   }
 
   @media (min-width: $screen-desktop) {
@@ -261,7 +274,7 @@
   @media (min-width: $screen-desktop) {
     width: auto;
     min-height: 99px;
-    transform: translateY(-4px);
+    transform: translateY(-5px);
   }
 }
 

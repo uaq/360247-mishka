@@ -1,4 +1,16 @@
 .promo-week {
-//  min-height: 830px;
-//  background: url ("../img/bg-zigzag-line.svg") no-repeat 0 100%;
+  min-height: 850px;
+  background: url("../img/bg-zigzag-line.svg") repeat-x 0 97%;
+  background-size: 320px auto;
+
+  @media (min-width: $screen-tablet) {
+    min-height: 0;
+    background-size: 768px auto;
+    background-position: 0 99%;
+  }
+
+  @media (min-width: $screen-desktop) {
+    background-size: 1150px auto;
+    background-position: 0 97%;
+  }
 }

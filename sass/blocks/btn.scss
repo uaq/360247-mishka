@@ -10,4 +10,13 @@
   text-decoration: none;
   text-transform: uppercase;
   border: 2px solid $dark-gray;
+
+  &:hover:not(.reviews__arrow) {
+    color: $white;
+    background: $dark-gray;
+  }
+
+  &:active:not(.reviews__arrow) {
+    color: #8d8d8d;
+  }
 }
