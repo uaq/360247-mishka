@@ -164,6 +164,14 @@
   text-decoration: none;
   color: $secondary-text;
 
+  &:hover {
+    color: $green-2;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &::before {
     content: "";
     position: absolute;
