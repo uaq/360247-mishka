@@ -16,20 +16,20 @@
 
 .features__title {
   margin: 0;
-  padding-top: 3px;
+  padding-top: 30px;
   color: $secondary-text;
   font-weight: bold;
   font-size: $font-size--xxxl;
   line-height: 30px / $font-size--xxxl;
 
   @media (min-width: $screen-tablet) {
-    padding-top: 46px;
+    padding-top: 55px;
     font-size: $font-size--xxxxxl;
     line-height: 50px / $font-size--xxxxxl;
   }
 
   @media (min-width: $screen-desktop) {
-    padding-top: 34px;
+    padding-top: 65px;
     font-size: $font-size--xxxxxxl;
     line-height: 57px / $font-size--xxxxxxl;
 
@@ -62,7 +62,7 @@
     width: 50%;
     min-height: 155px;
     font-size: $font-size--tempName;
-    font-weight: 22px / $font-size--tempName;
+    line-height: 22px / $font-size--tempName;
   }
 
   &::before {

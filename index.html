@@ -92,6 +92,7 @@
             <a class="item-ot-week__order order-btn btn" href="">Заказать</a>
           </div>
         </div>
+        <div class="promo-week__zigzag"></div>
       </section>
       <section class="features">
         <h2 class="features__title">Коротко о нас:</h2>
@@ -142,6 +143,7 @@
               <source media="(min-width: 668px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
               <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта">
             </picture>
+            <div id="map" class="contacts__map-interactive"></div>
           </div>
           <div class="contacts__write-wrapper">
             <a class="contacts__write btn" href="">Напишите нам</a>
@@ -189,23 +191,90 @@
       <form class="modal-order__form" action="https://echo.htmlacademy.ru" method="get">
         <h2 class="modal-order__title">Добавить в корзину</h2>
         <div class="modal-order__item">
-          <div>Выберите размер:</div>
-          <label class="size-label">S
-            <input type="radio" name="size" id="S" value="S">
-          </label>
-          <label class="size-label">M
-            <input type="radio" name="size" id="M" value="M">
-          </label>
-          <label class="size-label">L
-            <input type="radio" name="size" id="L" value="L">
-          </label>
-          <div class="modal-order__btn btn">
-            <button type="submit" name="size-btn" id="size-btn" value="odered">Добавить</button>
+          <div class="modal-order__subtitle">Выберите размер:</div>
+          <div class="modal-order__radio-wrapper">
+            <div>
+              <input class="modal-order__radio" type="radio" name="size" id="S" value="S">
+              <label for="S" class="modal-order__size-label">S</label>
+            </div>
+            <div>
+              <input class="modal-order__radio" type="radio" name="size" id="M" value="M">
+              <label for="M" class="modal-order__size-label">M</label>
+            </div>
+            <div>
+              <input class="modal-order__radio" type="radio" name="size" id="L" value="L">
+              <label for="L" class="modal-order__size-label">L</label>
+            </div>
           </div>
+          <button class="modal-order__btn btn" type="submit" name="size-btn" id="size-btn" value="odered">Добавить</button>
         </div>
       </form>
       <button class="modal-order__form-close" type="button" title="Закрыть">Закрыть</button>
     </div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?AIzaSyDPUJzfsWyRXGznxStb5nrN0NcmX1q3aas&signed_in=true&callback=initMap"></script>
+    <script>
+      var mapPoints = [
+        [
+          'Точка на карте', 
+            59.9387942, 
+            30.3230833, 
+            '<div class="some-class"><h2>Мишка</h2><p>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p></div>'
+          ],
+        ];
+      var mapStyle = [{
+        featureType: 'all',
+        stylers: [{ saturation: -100 }]
+      }];
+
+      var mapInfoWindow = null;
+
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var center = {lat: 59.9387942, lng: 30.3230833};
+        var map = new google.maps.Map(mapDiv, {
+        zoom: 13,
+        center: center,
+        disableDefaultUI: true,
+        styles: mapStyle
+        });
+        setMapMarkers(map);
+        mapInfoWindow = new google.maps.InfoWindow({
+          content: "loading...",
+          maxWidth: 200
+        });
+        map.addListener('resize', function() {
+        map.panTo(center); // Отцентруем
+        });
+        google.maps.event.addDomListener(window, 'resize', function(){
+          google.maps.event.trigger(map, 'resize'); 
+        });
+      }
+
+      function setMapMarkers(map) {
+        var image = {
+          url: 'http://s1.iconbird.com/ico/2013/8/425/w128h12813771935056.png',
+          size: new google.maps.Size(128, 128),
+          anchor: new google.maps.Point(64, 117)
+        };
+
+        for (var i = 0; i < mapPoints.length; i++) {
+
+          var point = mapPoints[i];
+          var marker = new google.maps.Marker({
+            position: {lat: point[1], lng: point[2]},
+            map: map,
+            icon: image,
+            title: point[0],
+            html: point[3],
+          });
+
+          google.maps.event.addListener(marker, 'click', function () {
+            mapInfoWindow.setContent(this.html);
+            mapInfoWindow.open(map, this);
+          });
+        }
+      }
+      </script>
     <script src="js/main-nav.js"></script>
     <script src="js/modal-order.js"></script>
   </body>

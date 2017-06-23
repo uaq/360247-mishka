@@ -41,7 +41,7 @@ gulp.task("serve", function() {
     server: "build/",
   });
 
-  gulp.watch("sass/**/*.sass", ["style"]);
+  gulp.watch("sass/**/*.scss", ["style"]);
   gulp.watch("*.html", ["html:update"]);
 });
 
@@ -98,6 +98,11 @@ gulp.task("html:copy", function() {
 });
 
 gulp.task("html:update", ["html:copy"], function(done) {
+  server.reload();
+  done();
+});
+
+gulp.task("style:update", ["style"], function(done) {
   server.reload();
   done();
 });

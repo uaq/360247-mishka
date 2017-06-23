@@ -4,16 +4,18 @@ var popup = document.querySelector(".modal-order");
 var close = popup.querySelector(".modal-order__form-close");
 //var radio = popup.querySelector("");
 var form = popup.querySelector(".modal-order__form");
+var overlay = document.querySelector(".modal-order__overlay");
 
 link.addEventListener("click", function(event) {
-    event.preventDefault();
-    popup.classList.add("modal-order__show");
+  event.preventDefault();
+  popup.classList.add("modal-order__show");
+  overlay.classList.add("modal-order__show");
 });
 
 close.addEventListener("click", function(event) {
-    event.preventDefault();
-    popup.classList.remove("modal-order__show");
-//    popup.classList.remove("modal-form-error");
+  event.preventDefault();
+  popup.classList.remove("modal-order__show");
+  overlay.classList.remove("modal-order__show");
 });
 
 //form.addEventListener("submit", function(event) {
@@ -29,10 +31,10 @@ close.addEventListener("click", function(event) {
 //});
 
 window.addEventListener("keydown", function(event) {
-    if (event.keyCode === 27) {
-        if (popup.classList.contains("modal-order__show")) {
-            popup.classList.remove("modal-order__show");
-//            popup.classList.remove("modal-form-error");
-        }
+  if (event.keyCode === 27) {
+    if (popup.classList.contains("modal-order__show")) {
+      popup.classList.remove("modal-order__show");
+      overlay.classList.remove("modal-order__show");
     }
+  }
 });

@@ -10,25 +10,49 @@
   position: fixed;
   top: 30%;
   left: 50%;
+  margin-left: -160px;
   z-index: 15;
   display: none;
-  margin-left: -50%;
-  padding: 85px 100px;
-  width: 100%;
-  min-width: 320px;
+  padding: 0px;
+  width: 320px;
   background-color: #ffffff;
   box-shadow:
     0 10px 20px 0 rgba(4, 6, 6, 0.2),
     55px 0 40px -55px rgba(4, 6, 6, 0.75),
     -55px 0 40px -55px rgba(4, 6, 6, 0.75);
+
+  @media (min-width: $screen-tablet) {
+    margin-left: -278px;
+    width: 556px;
+  }
 }
 
 .modal-order__title {
   margin: 0;
+  padding: 0 86px;
+  padding-top: 30px;
   color: $secondary-text;
   font-weight: bold;
   font-size: $font-size--xxxl;
   line-height: 30px / $font-size--xxxl;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $screen-tablet) {
+    padding-top: 50px;
+    font-size: 30px;
+  }
+}
+
+.modal-order__subtitle {
+  padding: 0 86px;
+  padding-top: 20px;
+  text-align: center;
+
+  @media (min-width: $screen-tablet) {
+    padding-top: 40px;
+    font-size: 17px;
+  }
 }
 
 .modal-order__item {
@@ -47,7 +71,7 @@
   display: none;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .modal-order__btn {
@@ -56,7 +80,7 @@
 
 .modal-order__show {
   display: block;
-  animation: bounce 0.6s;
+//  animation: bounce 0.6s;
 }
 
 .modal-order__error {
@@ -67,26 +91,26 @@
   position: absolute;
   top: 22px;
   right: 22px;
-  width: 55px;
-  height: 55px;
+  width: 23px;
+  height: 23px;
   outline: none;
   border: 0;
   border-radius: 50%;
-  background-color: rgba(240, 197, 46, 0.5);
+  background-color: rgba(99, 209, 187, 0.5);
   font-size: 0;
   cursor: pointer;
 }
 
 .modal-order__form-close:hover {
-  background-color: rgba(240, 197, 46, 1)
+  background-color: rgba(99, 209, 187, 1);
 }
 
 .modal-order__form-close::before,
 .modal-order__form-close::after {
   position: absolute;
-  top: 26px;
-  left: 10px;
-  width: 35px;
+  top: 10px;
+  left: 4px;
+  width: 15px;
   height: 3px;
   border-radius: 1px;
   background-color: #ffffff;
@@ -104,4 +128,64 @@
 
 .modal-order__form-close::after {
   transform: rotate(-45deg);
+}
+
+.modal-order__radio {
+  display: none;
+}
+
+.modal-order__size-label {
+  display: block;
+  margin-top: 20px;
+  padding-top: 10px;
+  width: 80px;
+  height: 52px;
+  border: 2px solid $gray-2;
+  font-weight: bold;
+  font-size: 17px;
+  text-align: center;
+
+  &:hover {
+    border-color: $gray-5;
+  }
+
+  @media (min-width: $screen-tablet) {
+    width: 112px;
+  }
+}
+
+.modal-order__radio:checked ~ label {
+  border-color: $green-2;
+}
+
+.modal-order__radio-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+
+  @media (min-width: $screen-tablet) {
+    padding: 0 90px;
+  }
+}
+
+.modal-order__item .modal-order__btn {
+  margin: 30px auto;
+  margin-bottom: 50px;
+  width: 81%;
+  color: $white;
+  background: $green-2;
+  border-color: $green-2;
+
+  &:hover {
+    background: transparent;
+    color: $green-2;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $screen-tablet) {
+    width: 67%;
+  }
 }
