@@ -20,8 +20,22 @@
 .making__content {
   margin-top: 32px;
   margin-bottom: 58px;
-  min-height: 503px;
+  min-height: 500px;
   border: 1px solid $gray-2;
+
+  &:hover {
+    box-shadow:
+    0 10px 20px 0 rgba(4, 6, 6, 0.2),
+    10px 0 20px -10px rgba(4, 6, 6, 0.75),
+    -10px 0 20px -10px rgba(4, 6, 6, 0.75);
+  }
+
+  &:active {
+    box-shadow:
+    0 1px 5px 0 rgba(4, 6, 6, 0.2),
+    10px 0 20px -10px rgba(4, 6, 6, 0.75),
+    -10px 0 20px -10px rgba(4, 6, 6, 0.75);
+  }
 
   @media (min-width: $screen-tablet) {
     margin-top: 54px;
@@ -106,9 +120,9 @@
 .making__title {
   position: relative;
   margin: 0;
-  padding-top: 24px;
+  padding-top: 21px;
   padding-left: 90px;
-  min-height: 95px;
+  min-height: 93px;
   color: $secondary-text;
   font-weight: bold;
   font-size: $font-size--lg;
@@ -125,7 +139,7 @@
 
   @media (min-width: $screen-desktop) {
     margin: 0;
-    padding-top: 99px;
+    padding-top: 95px;
     padding-left: 757px;
     padding-right: 55px;
   }
@@ -156,8 +170,24 @@
   }
 }
 
+//.making__text {
+//  &:hover {
+//    box-shadow:
+//    0 10px 20px 0 rgba(4, 6, 6, 0.2),
+//    10px 0 20px -10px rgba(4, 6, 6, 0.75),
+//    -10px 0 20px -10px rgba(4, 6, 6, 0.75);
+//  }
+//
+//  &:active {
+//    box-shadow:
+//    0 1px 5px 0 rgba(4, 6, 6, 0.2),
+//    10px 0 20px -10px rgba(4, 6, 6, 0.75),
+//    -10px 0 20px -10px rgba(4, 6, 6, 0.75);
+//  }
+//}
+
 .making__info {
-  padding-top: 19px;
+  padding-top: 17px;
   padding-left: 33px;
   padding-right: 33px;
   font-size: $font-size--xs;
@@ -165,7 +195,7 @@
 
   @media (min-width: $screen-tablet) {
     margin: 0;
-    padding: 0;
+    padding-top: 2px;
     padding-right: 45px;
     padding-left: 39px;
 
@@ -181,7 +211,7 @@
 
 .making__order {
   margin-left: 33px;
-  margin-bottom: 33px;
+//  margin-bottom: 30px;
   padding-left: 20px;
   padding-right: 20px;
   width: 192px;
@@ -213,5 +243,7 @@
 
   @media (min-width: $screen-desktop) {
     margin-left: 760px;
+    margin-top: 48px;
+    margin-bottom: 60px;
   }
 }

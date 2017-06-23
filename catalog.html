@@ -144,9 +144,11 @@
             </video>
             <img class="making__button" src="../img/icon-play.svg" alt="play">
           </div>
-          <p class="making__info">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <div class="modal__oder-wrapper">
-            <a class="making__order btn" href="">Сделать заказ</a>
+          <div class="making__text">
+            <p class="making__info">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <div class="making__oder-wrapper">
+              <a class="making__order btn" href="">Сделать заказ</a>
+            </div>
           </div>
         </div>
       </section>
@@ -195,19 +197,22 @@
       <form class="modal-order__form" action="https://echo.htmlacademy.ru" method="get">
         <h2 class="modal-order__title">Добавить в корзину</h2>
         <div class="modal-order__item">
-          <div>Выберите размер:</div>
-          <label class="size-label">S
-            <input type="radio" name="size" id="S" value="S">
-          </label>
-          <label class="size-label">M
-            <input type="radio" name="size" id="M" value="M">
-          </label>
-          <label class="size-label">L
-            <input type="radio" name="size" id="L" value="L">
-          </label>
-          <div class="modal-order__btn btn">
-            <button type="submit" name="size-btn" id="size-btn" value="odered">Добавить</button>
+          <div class="modal-order__subtitle">Выберите размер:</div>
+          <div class="modal-order__radio-wrapper">
+            <div>
+              <input class="modal-order__radio" type="radio" name="size" id="S" value="S">
+              <label for="S" class="modal-order__size-label">S</label>
+            </div>
+            <div>
+              <input class="modal-order__radio" type="radio" name="size" id="M" value="M">
+              <label for="M" class="modal-order__size-label">M</label>
+            </div>
+            <div>
+              <input class="modal-order__radio" type="radio" name="size" id="L" value="L">
+              <label for="L" class="modal-order__size-label">L</label>
+            </div>
           </div>
+          <button class="modal-order__btn btn" type="submit" name="size-btn" id="size-btn" value="odered">Добавить</button>
         </div>
       </form>
       <button class="modal-order__form-close" type="button" title="Закрыть">Закрыть</button>

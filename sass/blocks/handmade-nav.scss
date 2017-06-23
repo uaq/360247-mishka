@@ -19,8 +19,13 @@
   line-height: 24px / $font-size--xxl;
 
   @media (min-width: $screen-tablet) {
-    min-height: 120px;
+    padding-bottom: 31px;
+//    min-height: 528px;
     width: 50%;
+
+    &:hover {
+    transform: translateY(-5px);
+    }
   }
 
   @media (min-width: $screen-desktop) {

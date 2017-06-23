@@ -56,11 +56,11 @@
   opacity: 0.3;
 
   @media (min-width: $screen-tablet) {
-  top: -4px;
-  right: 20px;
+    top: -4px;
+    right: 20px;
   }
 
-  @media (min-width: $screen-tablet) {
+  @media (min-width: $screen-desktop) {
     right: 50px;
   }
 }
@@ -156,12 +156,16 @@
 
 .field-text input::placeholder,
 .field-text textarea::placeholder {
-  color: $main-text;
+  color: #d2d2d2;
 }
 
 .field-text--name input {
 
   @media (min-width: $screen-tablet) {
+    width: 83%;
+  }
+
+  @media (min-width: $screen-desktop) {
     width: 83%;
   }
 }
